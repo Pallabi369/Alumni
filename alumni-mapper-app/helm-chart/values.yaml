@@ -1,0 +1,11 @@
+
+applicationName: mapper
+imageTag: zalaris.azurecr.io/alumni/alumni-mapper-app:0.0.1-SNAPSHOT
+
+ports:
+  http: 8080
+
+springProfilesActive: "mongo,dev"
+replicaCount: 1
+
+ingressName: "mapper-ingress-static"

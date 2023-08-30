@@ -1,0 +1,77 @@
+version: "3.8"
+
+services:
+
+  db:
+    environment:
+      POSTGRES_DB: batch
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mysecretpassword
+    image: postgres:14.1
+    container_name: alumni_db
+    restart: always
+    volumes:
+      - "alumni_pgdata:/var/lib/postgresql/data"
+    expose:
+      - "5432"
+    ports:
+      - "5432:5432"
+
+  mongo:
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: alumni
+      MONGO_INITDB_ROOT_PASSWORD: mysecretpassword
+    image: mongo:4.4.11
+    container_name: alumni_mongo
+    restart: always
+    volumes:
+      - "alumni_mongo:/data/db"
+    expose:
+      - "27017"
+    ports:
+      - "27017:27017"
+
+  apimocks:
+    image: alumni/mocks-server:0.1.0
+    container_name: alumni_apimocks
+    restart: always
+    expose:
+      - "3100"
+    ports:
+      - "3100:3100"
+
+  sync:
+    environment:
+      SPRING_PROFILES_ACTIVE: mongo,dev,mockbus
+    image: zalaris.azurecr.io/alumni/alumni-sync-app:latest
+    container_name: alumni_sync
+    env_file:
+      - docker.env
+    restart: "no"
+    depends_on:
+      - db
+      - mongo
+    expose:
+      - "8080"
+    ports:
+      - "21000:8080"
+
+  mapper:
+    environment:
+      SPRING_PROFILES_ACTIVE: mongo,dev
+    image: zalaris.azurecr.io/alumni/alumni-mapper-app:latest
+    container_name: alumni_mapper
+    env_file:
+      - docker.env
+    restart: "no"
+    depends_on:
+      - db
+      - mongo
+    expose:
+      - "8080"
+    ports:
+      - "21001:8080"
+
+volumes:
+  alumni_pgdata:
+  alumni_mongo:

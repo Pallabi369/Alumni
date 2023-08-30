@@ -1,0 +1,55 @@
+plugins {
+  id 'java'
+  id 'org.springframework.boot'
+  id 'io.spring.dependency-management'
+  id 'com.github.jk1.dependency-license-report' version '2.0'
+}
+
+version = System.getenv('BUILD_SOURCEVERSION') ?: '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+dependencies {
+  implementation project(":alumni-mapper-core")
+  implementation project(':alumni-common')
+
+  implementation 'org.springframework.boot:spring-boot-starter-actuator'
+  implementation 'org.springframework.boot:spring-boot-starter-web'
+  implementation 'org.springframework.boot:spring-boot-starter-security'
+  implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
+  implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
+  implementation 'org.springframework.boot:spring-boot-starter'
+  implementation libs.openapi.ui
+  implementation libs.mongodb.encrypt
+  implementation libs.logstash.logback.encoder
+
+  runtimeClasspath libs.insights.agent
+
+  compileOnly 'org.projectlombok:lombok'
+  annotationProcessor 'org.projectlombok:lombok'
+
+  testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+dependencyManagement {
+  imports {
+    mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+  }
+}
+
+test {
+  useJUnitPlatform()
+}
+
+bootBuildImage {
+  imageName = "zalaris.azurecr.io/alumni/alumni-mapper-app:${project.version}"
+  tags = ["zalaris.azurecr.io/alumni/alumni-mapper-app:latest"]
+  environment = [
+      'BPE_APPEND_JAVA_TOOL_OPTIONS' : ' -javaagent:/workspace/BOOT-INF/lib/applicationinsights-agent-3.2.10.jar'
+  ]
+}
+
+
+import com.github.jk1.license.render.*
+licenseReport {
+  renderers = [new JsonReportRenderer(), new SimpleHtmlReportRenderer()]
+}

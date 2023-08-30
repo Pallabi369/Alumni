@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "mocks": "mocks-server",
+    "copy-schema": "node ./bin/copy-schema.js"
+  },
+  "devDependencies": {
+    "@mocks-server/main": "^2.6.0"
+  },
+  "dependencies": {
+    "json-schema-faker": "^0.5.0-rcv.40",
+    "chance": "^1.1.8"
+  }
+}

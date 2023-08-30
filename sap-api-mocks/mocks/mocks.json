@@ -1,0 +1,6 @@
+[
+  {
+    "id": "zalaris",
+    "routesVariants": ["clone:success", "payroll:success", "payslip:success"]
+  }
+]

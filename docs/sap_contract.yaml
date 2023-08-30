@@ -1,0 +1,209 @@
+openapi: 3.0.1
+info:
+  title: Zalaris Alumni - Data Provider
+  description: Contract for delivering data from provider to service Alumni
+  version: 1.0.0
+paths:
+  /rest/employee:
+    get:
+      tags:
+        - HR Master data
+      summary: Personal data
+      parameters:
+        - name: user
+          in: query
+          description: Zalaris ID
+          required: true
+          schema:
+            type: string
+        - name: infotype
+          in: query
+          description: Requested infotype coma separated
+          required: true
+          schema:
+            type: string
+            enum:
+              - P0001
+              - P0002
+              - P0006
+              - P0008
+              - P0009
+              - P0014
+              - P0015
+      responses:
+        200:
+          description: Valid response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PersonalDataContainer'
+        404:
+          description: No infotype data for given user
+          content: {}
+  /rest/payroll:
+    get:
+      tags:
+        - Payroll data
+      summary: Payroll summary
+      parameters:
+        - name: user
+          in: query
+          description: Zalaris ID
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Valid response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Payslips'
+        404:
+          description: No data for given user
+          content: { }
+  /rest/payroll/payslips:
+    get:
+      tags:
+        - Payroll data
+      summary: Payslip PDF file
+      parameters:
+        - name: user
+          in: query
+          description: Zalaris ID
+          required: true
+          schema:
+            type: string
+        - name: year
+          in: query
+          description: Year of payroll
+          required: true
+          schema:
+            type: string
+        - name: month
+          in: query
+          description: Month of payroll
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Binary PDF file
+          content:
+            application/pdf:
+              schema:
+                type: string
+                format: binary
+        404:
+          description: No data for given user
+          content: { }
+
+  /webhook/terminated:
+    post:
+      tags:
+        - Alumni Webhook
+      summary: Terminated employee opt-in
+      description: Webhook receiving information about terminated employee opt-in
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TerminatedRequest'
+      responses:
+        200:
+          description: Request acknowledged
+
+components:
+  schemas:
+    PersonalDataContainer:
+      type: object
+      properties:
+        P0001:
+          $ref: "#/components/schemas/DT_P0001"
+          description: "Organizational Assignment"
+        P0002:
+          $ref: "#/components/schemas/DT_P0002"
+          description: "Personal Information"
+        P0006:
+          type: array
+          items:
+            $ref: "#/components/schemas/DT_P0006"
+            description: "Addresses"
+        P0008:
+          $ref: "#/components/schemas/DT_P0008"
+          description: "Basic Pay"
+        P0009:
+          type: array
+          items:
+            $ref: "#/components/schemas/DT_P0009"
+            description: "Bank Details"
+        P0014:
+          type: array
+          items:
+            $ref: "#/components/schemas/DT_P0014"
+            description: "Recur. Payments/Deds."
+        P0015:
+          $ref: "#/components/schemas/DT_P0015"
+          description: "Additional Payments"
+    DT_P0001:
+      $ref: ../alumni-common-schema/src/main/resources/json/DT_P0001.schema
+    DT_P0002:
+      $ref: ../alumni-common-schema/src/main/resources/json/DT_P0002.schema
+    DT_P0006:
+      $ref: ../alumni-common-schema/src/main/resources/json/DT_P0006.schema
+    DT_P0008:
+      $ref: ../alumni-common-schema/src/main/resources/json/DT_P0008.schema
+    DT_P0009:
+      $ref: ../alumni-common-schema/src/main/resources/json/DT_P0009.schema
+    DT_P0014:
+      $ref: ../alumni-common-schema/src/main/resources/json/DT_P0014.schema
+    DT_P0015:
+      $ref: ../alumni-common-schema/src/main/resources/json/DT_P0015.schema
+    TerminatedRequest:
+      type: object
+      properties:
+        zalarisId:
+          type: string
+          description: Zalaris identifier
+        ssid:
+          type: string
+          description: Personal ID
+      example:
+        zalarisId: "510-00460014"
+        ssid: "83050401234"
+    Payslips:
+      type: array
+      items:
+        type: object
+        properties:
+          month:
+            type: integer
+          year:
+            type: integer
+          earnings:
+            type: array
+            items:
+              type: object
+              properties:
+                wage:
+                  type: string
+                value:
+                  type: number
+              example:
+                wage: Salary
+                value: 13242.21
+          deductions:
+            type: array
+            items:
+              type: object
+              properties:
+                wage:
+                  type: string
+                value:
+                  type: string
+              example:
+                wage: Tax
+                value: 4000
+          pdf:
+            type: string
+            example: https://portal.zalaris.com/blabla/payslips?user=510-00460014&year=2021&month=04

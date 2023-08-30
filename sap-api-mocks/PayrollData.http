@@ -1,0 +1,7 @@
+### Random user
+GET http://localhost:3100/payroll-results?user=099-12345678
+Accept: application/json
+
+### Cloned user
+GET http://localhost:3100/payroll-results?user=510-00460014
+Accept: application/json

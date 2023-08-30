@@ -1,0 +1,11 @@
+
+mockbus:
+  autoconfigure:
+    exclude:
+      - org.springframework.cloud.stream.config.BindingServiceConfiguration
+      - org.springframework.cloud.stream.function.FunctionConfiguration
+
+alumni:
+  sync:
+    servicebus:
+      connection-string: Endpoint=sb://localhost/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=NO

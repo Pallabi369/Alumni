@@ -1,0 +1,42 @@
+
+spring:
+  application:
+    name: mapper
+  main:
+    banner-mode: off
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${alumni.app.jwt.issuer-uri}
+
+  data:
+    mongodb:
+      uri: ${alumni.app.mongodb.uri}
+
+identity:
+  signicat:
+    client-id: ${alumni.app.identity.signicat.client-id}
+    client-secret: ${alumni.app.identity.signicat.client-secret}
+    redirect-uri: ${alumni.app.identity.signicat.redirect-uri}
+    token-uri: ${alumni.app.identity.signicat.token-uri}
+    user-info-uri: ${alumni.app.identity.signicat.user-info-uri}
+  b2c:
+    client-id: ${alumni.app.identity.b2c.client-id}
+    client-secret: ${alumni.app.identity.b2c.client-secret}
+    tenant-id: ${alumni.app.identity.b2c.tenant-id}
+    ssid-property: ${alumni.app.identity.b2c.ssid-property}
+
+alumni:
+  app:
+    security:
+      enabled: true
+  data-origin:
+    strategy: policy
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health

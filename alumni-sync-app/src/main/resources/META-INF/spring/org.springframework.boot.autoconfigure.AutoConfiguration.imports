@@ -1,0 +1,5 @@
+dev.zalaris.alumni.sync.adapter.data.mongo.MongoAccessConfiguration
+dev.zalaris.alumni.sync.adapter.sap.SapAccessConfiguration
+dev.zalaris.alumni.sync.app.employee.EmployeeConfiguration
+dev.zalaris.alumni.sync.app.payslip.PayslipFileConfiguration
+

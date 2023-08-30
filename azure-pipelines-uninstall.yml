@@ -1,0 +1,31 @@
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: HelmDeploy@0
+  displayName: Uninstall alumni-mapper-app
+  inputs:
+    connectionType: 'Kubernetes Service Connection'
+    kubernetesServiceConnection: 'Zalaris k8s Alumni Default'
+    namespace: 'default'
+    command: 'uninstall'
+    arguments: 'alumni-mapper-app'
+
+- task: HelmDeploy@0
+  displayName: Uninstall alumni-sync-app
+  inputs:
+    connectionType: 'Kubernetes Service Connection'
+    kubernetesServiceConnection: 'Zalaris k8s Alumni Default'
+    namespace: 'default'
+    command: 'uninstall'
+    arguments: 'alumni-sync-app'
+
+- task: HelmDeploy@0
+  displayName: Uninstall alumni-webapp
+  inputs:
+    connectionType: 'Kubernetes Service Connection'
+    kubernetesServiceConnection: 'Zalaris k8s Alumni Default'
+    namespace: 'default'
+    command: 'uninstall'
+    arguments: 'alumni-webapp'

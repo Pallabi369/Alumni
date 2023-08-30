@@ -1,0 +1,164 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    service: {{ .Values.applicationName }}
+  name: {{ .Values.applicationName }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      service: {{ .Values.applicationName }}
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        service: {{ .Values.applicationName }}
+    spec:
+      containers:
+        - env:
+            - name: ALUMNI_APP_MONGODB_URI
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-mapper-app
+                  key: mongodb-uri
+            - name: ALUMNI_APP_JWT_ISSUER_URI
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-mapper-app
+                  key: jwt-issuer-uri
+            - name: ALUMNI_APP_IDENTITY_SIGNICAT_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-mapper-app
+                  key: signicat-client-id
+            - name: ALUMNI_APP_IDENTITY_SIGNICAT_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-mapper-app
+                  key: signicat-client-secret
+            - name: ALUMNI_APP_IDENTITY_SIGNICAT_REDIRECT_URI
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-mapper-app
+                  key: signicat-redirect-uri
+            - name: ALUMNI_APP_IDENTITY_SIGNICAT_TOKEN_URI
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-mapper-app
+                  key: signicat-token-uri
+            - name: ALUMNI_APP_IDENTITY_SIGNICAT_USER_INFO_URI
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-mapper-app
+                  key: signicat-user-info-uri
+            - name: ALUMNI_APP_IDENTITY_B2C_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-mapper-app
+                  key: b2c-client-id
+            - name: ALUMNI_APP_IDENTITY_B2C_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-mapper-app
+                  key: b2c-client-secret
+            - name: ALUMNI_APP_IDENTITY_B2C_TENANT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-mapper-app
+                  key: b2c-tenant-id
+            - name: ALUMNI_APP_IDENTITY_B2C_SSID_PROPERTY
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-mapper-app
+                  key: b2c-ssid-property
+            - name: SAP_API_ENABLED
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-sapapi
+                  key: enabled
+            - name: SAP_API_OAUTH2_CLIENT_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-sapapi
+                  key: oauth2_client_name
+            - name: SAP_API_OAUTH2_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-sapapi
+                  key: oauth2_client_id
+            - name: SAP_API_OAUTH2_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-sapapi
+                  key: oauth2_client_secret
+            - name: SAP_API_OAUTH2_SCOPE
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-sapapi
+                  key: oauth2_scope
+            - name: SAP_API_OAUTH2_TOKEN_URI
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-sapapi
+                  key: oauth2_token_uri
+            - name: SAP_API_ENDPOINT_PERSONALDATA_URL
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-sapapi
+                  key: endpoint_personaldata_url
+            - name: SAP_API_ENDPOINT_PAYROLLDATA_URL
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-sapapi
+                  key: endpoint_payrolldata_url
+            - name: SAP_API_ENDPOINT_PAYSLIPDATA_URL
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-sapapi
+                  key: endpoint_payslipdata_url
+            - name: SAP_API_SUBSCRIPTION_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-sapapi
+                  key: subscription_key
+            - name: MONGODB_ENCRYPT_KEYS_0_VERSION
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-encrypted
+                  key: key_0_version
+            - name: MONGODB_ENCRYPT_KEYS_0_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-encrypted
+                  key: key_0_value
+            - name: MONGODB_ENCRYPT_FIELDS
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-encrypted
+                  key: fields
+            - name: APPLICATIONINSIGHTS_CONNECTION_STRING
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-mapper-app
+                  key: insights-connection-string
+            - name: APPLICATIONINSIGHTS_ROLE_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-mapper-app
+                  key: insights-role-name
+            - name: SPRING_PROFILES_ACTIVE
+              value: {{ .Values.springProfilesActive }}
+          image: {{ .Values.imageTag }}
+          imagePullPolicy: Always
+          name: {{ .Values.applicationName }}
+          ports:
+            - containerPort: {{ .Values.ports.http }}
+          resources:
+            requests:
+              memory: "1Gi"
+            limits:
+              memory: "2Gi"
+      restartPolicy: Always
+      imagePullSecrets:
+        - name: regcred

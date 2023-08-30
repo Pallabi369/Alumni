@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    service: {{ .Values.applicationName }}
+  name: {{ .Values.applicationName }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      service: {{ .Values.applicationName }}
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        service: {{ .Values.applicationName }}
+    spec:
+      containers:
+        - image: {{ .Values.imageTag }}
+          name: {{ .Values.applicationName }}
+          ports:
+            - containerPort: {{ .Values.ports.http }}
+          resources: {}
+      restartPolicy: Always
+      imagePullSecrets:
+        - name: regcred

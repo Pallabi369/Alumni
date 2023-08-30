@@ -1,0 +1,62 @@
+plugins {
+  id 'java'
+  id 'org.springframework.boot'
+  id 'io.spring.dependency-management'
+  id 'jacoco'
+}
+
+dependencies {
+  implementation project(':alumni-common')
+
+  implementation "dev.zalaris:zalaris-spring-boot-starter-sync:${syncVersion}"
+
+  implementation 'org.springframework.boot:spring-boot-starter-web'
+  implementation 'org.springframework.boot:spring-boot-starter-webflux'
+  implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+  implementation 'org.springframework.boot:spring-boot-starter-validation'
+  implementation 'org.springframework.cloud:spring-cloud-stream'
+  implementation 'commons-codec:commons-codec'
+  implementation 'org.springframework.security:spring-security-oauth2-client'
+
+  implementation libs.openapi.ui
+  implementation libs.jaxb.api
+  implementation libs.mongodb.encrypt
+
+  implementation 'com.fasterxml.jackson.module:jackson-module-jaxb-annotations'
+  compileOnly 'org.projectlombok:lombok'
+  annotationProcessor 'org.projectlombok:lombok'
+  annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+  testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+
+  testImplementation libs.testcontainers
+  testImplementation libs.testcontainers.postgresql
+  testImplementation libs.awaitility
+}
+
+dependencyManagement {
+  imports {
+    mavenBom "com.azure.spring:spring-cloud-azure-dependencies:${azureSpringCloudVersion}"
+    mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+  }
+}
+
+bootJar {
+  enabled = false
+}
+
+bootBuildImage {
+  enabled = false
+}
+
+test {
+  useJUnitPlatform()
+  finalizedBy jacocoTestReport
+}
+
+jacocoTestReport {
+  dependsOn test
+  reports {
+    xml.required = true
+  }
+}

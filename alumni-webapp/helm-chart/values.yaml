@@ -1,0 +1,10 @@
+
+applicationName: webapp
+imageTag: zalaris.azurecr.io/alumni/alumni-webapp:0.0.1-SNAPSHOT
+
+ports:
+  http: 80
+
+replicaCount: 1
+
+ingressName: "webapp-ingress-static"

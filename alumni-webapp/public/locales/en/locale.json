@@ -1,0 +1,397 @@
+{
+  "onboarding": {
+    "unexpectedError": {
+      "title": "An unexpected error occurred"
+    },
+    "getStarted": {
+      "title": "Welcome to Zalaris Alumni",
+      "subtitle": {
+        "line1": "Your employment information,",
+        "line2": "personal and payroll data are ready for you."
+      },
+      "button": "Sign in"
+    },
+    "welcomeOfficeUser": {
+      "title": "Welcome to Zalaris Alumni",
+      "subtitle": {
+        "line1": "Your employment information,",
+        "line2": "personal and payroll data are ready for you."
+      }
+    },
+    "invalidToken": {
+      "title": "Invalid token detected",
+      "subtitle": {
+        "line1": "Unfortunately, your token appears to be invalid, thus we can't proceed",
+        "line2": "If you are a corporate user, it should contain the 'zalarisId' claim. Otherwise, it cannot contain the claim 'zalarisId'"
+      }
+    },
+    "identityVerification": {
+      "title": "Identity verification",
+      "subtitle": {
+        "line1": "We need to verify that you are you before we provide you with access to data",
+        "line2": ""
+      },
+      "button": "Verify"
+    },
+    "verificationResult": {
+      "title": "Hi",
+      "subtitle": {
+        "line1": "Your account is being linked to ID card. Please be patient. It usually takes few seconds...",
+        "line2": "Your browser may refresh this page several times... nothing to worry about."
+      }
+    },
+    "invalidVerificationCode": {
+      "title": "The verification process failed",
+      "subtitle": {
+        "line1": "Something went wrong with the verification process. ",
+        "line2": "You can try again by clicking on the link below"
+      },
+      "button": "Try again"
+    },
+    "noDataStep": {
+      "title": "Data not found",
+      "subtitle": {
+        "line1": "Unfortunately we don't have your data",
+        "line2": "Please contact your HR personnel for support"
+      }
+    },
+    "serviceUnavailable": {
+      "title": "Service temporarily unavailable",
+      "subtitle": {
+        "line1": "Unfortunately, we have encountered some issues that prevent us from continuing our work.",
+        "line2": "Come back later or contact the administrator."
+      }
+    },
+    "help": {
+      "link": "Help"
+    }
+  },
+  "service": {
+    "personalData": {
+      "title":"Personal data",
+      "subtitle": "",
+      "personalInformation": {
+        "title": "Personal Information",
+        "subtitle": "",
+        "group": {
+          "personnel": {
+            "title": "General information",
+            "subtitle": "",
+            "field": {
+              "personnelNo": "Personnel Number",
+              "startDate": "Start date",
+              "endDate": "End date",
+              "changedAt": "Changed on",
+              "changedBy": "Changed by"
+            }
+          },
+          "name": {
+            "title": "Name",
+            "subtitle": "",
+            "field": {
+              "formOfAddressKey": "Form-of-Address Key",
+              "firstName": "First name",
+              "lastName": "Last name",
+              "middleName": "Middle name",
+              "nickName": "Nickname",
+              "genderKey": "Gender",
+              "initials": "Initials"
+            }
+          },
+          "additionalData": {
+            "title": "Additional data",
+            "subtitle": "",
+            "field": {
+              "ppsNo": "PPS number",
+              "birthDate": "Birth date",
+              "language": "Communication language",
+              "nationality": "Nationality",
+              "maritalStatusKey": "Marital status key",
+              "nrOfChildren": "Number of children",
+              "personalIdentifier": "Personal identifier"
+            }
+          }
+        }
+      },
+      "organizationalAssignment": {
+        "title": "Organizational assignment",
+        "subtitle": "",
+        "group": {
+          "personnel": {
+            "title": "General information",
+            "subtitle": "",
+            "field": {
+              "personnelNo": "Personnel Number",
+              "startDate": "Start date",
+              "endDate": "End date",
+              "changedAt": "Changed on",
+              "changedBy": "Changed by"
+            }
+          },
+          "enterpriseStructure": {
+            "title": "Enterprise structure",
+            "subtitle": "",
+            "field": {
+              "companyCode": "Company code",
+              "companyName": "Company name",
+              "legalPerson": "Legal Person",
+              "personnelArea": "Personnel Area",
+              "personnelSubarea": "Personnel Subarea",
+              "costCenter": "Cost center",
+              "costCenterName": "Cost center name",
+              "customBusinessAreaId": "Custom Business Area ID"
+            }
+          },
+          "personnelStructure": {
+            "title": "Personnel structure",
+            "subtitle": "",
+            "field": {
+              "payrollArea": "Payroll Area",
+              "contract": "Work Contract",
+              "employeeGroup": "Employee Group",
+              "employeeSubgroup": "Employee Subgroup"
+            }
+          },
+          "organizationalPlan": {
+            "title": "Organizational Plan",
+            "subtitle": "",
+            "field": {
+              "position": "Position",
+              "job": "Job",
+              "organizationUnit": "Organizational Unit",
+              "organizationKey": "Organizational Key"
+            }
+          },
+          "administrator": {
+            "title": "Administrator",
+            "subtitle": "",
+            "field": {
+              "group": "Administrator Group",
+              "timeRecording": "Administrator for Time Recording",
+              "hr": "Administrator for HR Master Data",
+              "payroll": "Payroll Administrator",
+              "supervisor": "Supervisor Area"
+            }
+          }
+        }
+      },
+      "addresses": {
+        "title": "Addresses",
+        "subtitle": "",
+        "parent": "Personal Data",
+        "addressType": "Address Record Type",
+        "street2ndLine": "2nd Address Line",
+        "street": "Street and House Number",
+        "houseNumber": "House Number",
+        "apartment": "Identification of an apartment in a building",
+        "postalCode": "Postal Code",
+        "city": "City",
+        "district": "District",
+        "state": "Region (State, Province, County)",
+        "country": "Country Key",
+        "phoneNumber": "Telephone Number"
+      },
+      "communications": {
+        "title": "Communications",
+        "subtitle": "",
+        "group": {
+          "communication": {
+            "title": "Communication",
+            "subtitle": "",
+            "field": {
+              "type": "Type",
+              "communicationId": "Communication Identification/Number",
+              "communicationType": "Communication Type"
+            }
+          }
+        }
+      },
+      "basicPay": {
+        "title": "Basic Pay",
+        "subtitle": "",
+        "group":{
+          "personnel": {
+            "title": "General information",
+            "subtitle": "",
+            "field": {
+              "personnelNo": "Personnel Number",
+              "startDate": "Start date",
+              "endDate": "End date",
+              "changedAt": "Changed on",
+              "changedBy": "Changed by"
+            }
+          },
+          "payscale": {
+            "title": "Payscale",
+            "subtitle": "",
+            "field": {
+              "subtype": "Subtype",
+              "reason": "Reason for Changing Master Data",
+              "type": "Pay scale type",
+              "area": "Pay Scale Area",
+              "group": "Pay Scale Group",
+              "capacityUtilizationLevel": "Capacity Utilization Level",
+              "workingHoursPerPayrollPeriod": "Working Hours per Payroll Period",
+              "dateOfNextIncrease": "Date of Next Increase",
+              "annualSalary": "Annual salary",
+              "annualSalaryCurrencyKey": "Currency Key for Annual Salary"
+            }
+          },
+          "payWages": {
+            "title": "Wages",
+            "subtitle": "",
+            "field": {
+              "type": "Type",
+              "amount": "Amount",
+              "unit": "Unit"
+            }
+          },
+          "recurringPaymentDeductions": {
+            "title": "Recurring Payment/Deductions",
+            "subtitle": "",
+            "field": {
+              "type": "Type",
+              "amount": "Amount",
+              "currency": "Currency",
+              "startDate": "Start date",
+              "endDate": "End date"
+            }
+          },
+          "additionalPaymentDeductions": {
+            "title": "Additional Payment/Deductions",
+            "subtitle": "",
+            "field": {
+              "type": "Type",
+              "amount": "Amount",
+              "currency": "Currency",
+              "startDate": "Start date",
+              "endDate": "End date"
+            }
+          }
+        }
+      },
+      "bankDetails": {
+        "title": "Bank Details",
+        "subtitle": "",
+        "group": {
+          "main": {
+            "title": "Bank",
+            "subtitle": "",
+            "field": {
+              "bankDetailsType": "Type of Bank Details Record",
+              "payee": "Payee",
+              "postCode": "Postal Code",
+              "city": "City",
+              "bankCountryKey": "Bank Country",
+              "bankNumber": "Bank account number",
+              "bankKey": "Bank Key",
+              "bankControlKey": "Check Digit for Bank No./Account",
+              "swift": "SWIFT",
+              "paymentMethod": "Payment Method",
+              "currency": "Currency",
+              "startDate": "Start date",
+              "endDate": "End date"
+            }
+          }
+        }
+      }
+    },
+    "payrollData": {
+      "title": "Payroll data",
+      "subtitle": "",
+      "tile": {
+        "earned": "Earned",
+        "paid": "Paid"
+      },
+      "btn": {
+        "previewPayslip": "Preview",
+        "downloadPayslip": "Download"
+      },
+      "table": {
+        "earned": "Earned",
+        "startDate": "Start date of payroll period",
+        "paidAt": "Pay date for payroll",
+        "period": "In-period for payroll"
+      },
+      "group": {
+        "general": {
+          "title": "General information",
+          "subtitle": "",
+          "field": {
+            "sequence": "Payroll sequence number",
+            "inPeriod": "In-period for payroll",
+            "forPeriod": "For-Period for Payroll (YYYYMM)",
+            "startPayroll": "Start date of payroll period (FOR period)",
+            "endPayroll": "End of payroll period (for-period)",
+            "payDate": "Pay date for payroll result",
+            "amountPaid": "Pay amount for payroll result",
+            "area": "Payroll area",
+            "companyCode": "Legal Person/Company code",
+            "currency": "Currency"
+          }
+        },
+        "rt": {
+          "title": "Payroll results details",
+          "subtitle": "",
+          "field": {
+            "wageType": "Wage type",
+            "hrPayrollNumber": "HR payroll: Number",
+            "hrPayrollAmount": "HR payroll: Amount",
+            "currency": "Currency"
+          }
+        },
+        "crt": {
+          "title": "Cumulative payroll results",
+          "subtitle": "",
+          "field": {
+            "wageType": "Wage type",
+            "hrPayrollNumber": "HR payroll: Number",
+            "hrPayrollAmount": "HR payroll: Amount",
+            "currency": "Currency"
+          }
+        },
+        "bankTransfers": {
+          "title": "Bank transfers",
+          "subtitle": "",
+          "field": {
+            "wageType": "Description",
+            "hrPayrollAmount": "HR payroll: Number",
+            "bankCountryKey": "Bank Country Key",
+            "bankNumber": "Bank Number",
+            "bankAccountNumber": "Bank Account number",
+            "transferDate": "Transfer date",
+            "currency": "Currency"
+          }
+        }
+      }
+    }
+  },
+  "common": {
+    "welcome": "Welcome",
+    "pitch": "What can we do for you?",
+    "gender": {
+      "male": "Male",
+      "female": "Female",
+      "trans": "Transgender",
+      "nonbinary": "Non-Binary",
+      "undeclared": "Undeclared",
+      "unknown": "unknown"
+    },
+    "date": {
+      "year": "Year",
+      "month": "Month"
+    },
+    "unknown": "Unknown",
+    "download": "Download",
+    "open": "Open",
+    "logout": "Logout",
+    "inprogress": "In progress",
+    "profile": "Profile",
+    "nonApplicable": "Not applicable",
+    "clickToShowValue": "Click to show value"
+  },
+  "error": {
+    "payrollResultsEmpty": "No payroll data found",
+    "payrollDetailsNotFound": "The selected payroll doesn't exist."
+  }
+}

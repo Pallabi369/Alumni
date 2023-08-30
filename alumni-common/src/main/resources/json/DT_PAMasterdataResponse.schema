@@ -1,0 +1,5376 @@
+{
+  "title": "DT_PAMasterdataResponse.xsd",
+  "$schema": "http://json-schema.org/schema#",
+  "id": "http://zalaris.com/restAPI/v1/masterdata",
+  "type": "object",
+  "properties": {
+    "P0001": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/DT_P0001"
+      }
+    },
+    "P0002": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/DT_P0002"
+      }
+    },
+    "P0006": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/DT_P0006"
+      }
+    },
+    "P0008": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/DT_P0008"
+      }
+    },
+    "P0009": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/DT_P0009"
+      }
+    },
+    "P0014": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/DT_P0014"
+      }
+    },
+    "P0015": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/DT_P0015"
+      }
+    },
+    "P0105": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/DT_P0105"
+      }
+    }
+  },
+  "required": [
+    "P0001", "P0002", "P0006", "P0008", "P0009", "P0014", "P0015", "P0105"
+  ],
+  "additionalProperties": false,
+  "definitions": {
+    "DT_P0015": {
+      "type": "object",
+      "properties": {
+        "PERNR": {
+          "type": "string",
+          "description": "Personnel Number"
+        },
+        "INFTY": {
+          "type": "string",
+          "description": "Infotype"
+        },
+        "SUBTY": {
+          "type": "string",
+          "description": "Subtype"
+        },
+        "OBJPS": {
+          "type": "string",
+          "description": "Object Identification"
+        },
+        "SPRPS": {
+          "type": "string",
+          "description": "Lock Indicator for HR Master Data Record"
+        },
+        "ENDDA": {
+          "type": "string",
+          "description": "End Date"
+        },
+        "BEGDA": {
+          "type": "string",
+          "description": "Start Date"
+        },
+        "SEQNR": {
+          "type": "string",
+          "description": "Number of Infotype Record with Same Key"
+        },
+        "AEDTM": {
+          "type": "string",
+          "description": "Changed On"
+        },
+        "UNAME": {
+          "type": "string",
+          "description": "Name of Person Who Changed Object"
+        },
+        "HISTO": {
+          "type": "string",
+          "description": "Historical Record Flag"
+        },
+        "ITXEX": {
+          "type": "string",
+          "description": "Text Exists for Infotype"
+        },
+        "REFEX": {
+          "type": "string",
+          "description": "Reference Fields Exist (Primary/Secondary Costs)"
+        },
+        "ORDEX": {
+          "type": "string",
+          "description": "Confirmation Fields Exist"
+        },
+        "ITBLD": {
+          "type": "string",
+          "description": "Infotype Screen Control"
+        },
+        "PREAS": {
+          "type": "string",
+          "description": "Reason for Changing Master Data"
+        },
+        "FLAG1": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG2": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG3": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG4": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "RESE1": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "RESE2": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "GRPVL": {
+          "type": "string",
+          "description": "Grouping Value for Personnel Assignments"
+        },
+        "LGART": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "OPKEN": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "BETRG": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "WAERS": {
+          "type": "string",
+          "description": "Currency Key"
+        },
+        "ANZHL": {
+          "type": "string",
+          "description": "Number"
+        },
+        "ZEINH": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "INDBW": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "ZUORD": {
+          "type": "string",
+          "description": "Assignment Number"
+        },
+        "ESTDT": {
+          "type": "string",
+          "description": "Date of origin"
+        },
+        "PABRJ": {
+          "type": "string",
+          "description": "Payroll Year"
+        },
+        "PABRP": {
+          "type": "string",
+          "description": "Payroll Period"
+        },
+        "UWDAT": {
+          "type": "string",
+          "description": "Date of Bank Transfer"
+        },
+        "ITFTT": {
+          "type": "string",
+          "description": "Processing type"
+        },
+        "PERNR_TEXT": {
+          "type": "string",
+          "description": "Personnel Number"
+        },
+        "INFTY_TEXT": {
+          "type": "string",
+          "description": "Infotype"
+        },
+        "SUBTY_TEXT": {
+          "type": "string",
+          "description": "Subtype"
+        },
+        "OBJPS_TEXT": {
+          "type": "string",
+          "description": "Object Identification"
+        },
+        "SPRPS_TEXT": {
+          "type": "string",
+          "description": "Lock Indicator for HR Master Data Record"
+        },
+        "ENDDA_TEXT": {
+          "type": "string",
+          "description": "End Date"
+        },
+        "BEGDA_TEXT": {
+          "type": "string",
+          "description": "Start Date"
+        },
+        "SEQNR_TEXT": {
+          "type": "string",
+          "description": "Number of Infotype Record with Same Key"
+        },
+        "AEDTM_TEXT": {
+          "type": "string",
+          "description": "Changed On"
+        },
+        "UNAME_TEXT": {
+          "type": "string",
+          "description": "Name of Person Who Changed Object"
+        },
+        "HISTO_TEXT": {
+          "type": "string",
+          "description": "Historical Record Flag"
+        },
+        "ITXEX_TEXT": {
+          "type": "string",
+          "description": "Text Exists for Infotype"
+        },
+        "REFEX_TEXT": {
+          "type": "string",
+          "description": "Reference Fields Exist (Primary/Secondary Costs)"
+        },
+        "ORDEX_TEXT": {
+          "type": "string",
+          "description": "Confirmation Fields Exist"
+        },
+        "ITBLD_TEXT": {
+          "type": "string",
+          "description": "Infotype Screen Control"
+        },
+        "PREAS_TEXT": {
+          "type": "string",
+          "description": "Reason for Changing Master Data"
+        },
+        "FLAG1_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG2_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG3_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG4_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "RESE1_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "RESE2_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "GRPVL_TEXT": {
+          "type": "string",
+          "description": "Grouping Value for Personnel Assignments"
+        },
+        "LGART_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "OPKEN_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "BETRG_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "WAERS_TEXT": {
+          "type": "string",
+          "description": "Currency Key"
+        },
+        "ANZHL_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "ZEINH_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "INDBW_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "ZUORD_TEXT": {
+          "type": "string",
+          "description": "Assignment Number"
+        },
+        "ESTDT_TEXT": {
+          "type": "string",
+          "description": "Date of origin"
+        },
+        "PABRJ_TEXT": {
+          "type": "string",
+          "description": "Payroll Year"
+        },
+        "PABRP_TEXT": {
+          "type": "string",
+          "description": "Payroll Period"
+        },
+        "UWDAT_TEXT": {
+          "type": "string",
+          "description": "Date of Bank Transfer"
+        },
+        "ITFTT_TEXT": {
+          "type": "string",
+          "description": "Processing type"
+        }
+      },
+      "additionalProperties": false,
+      "description": "undefined\nProcessing type"
+    },
+    "DT_P0014": {
+      "type": "object",
+      "properties": {
+        "PERNR": {
+          "type": "string",
+          "description": "Personnel Number"
+        },
+        "INFTY": {
+          "type": "string",
+          "description": "Infotype"
+        },
+        "SUBTY": {
+          "type": "string",
+          "description": "Subtype"
+        },
+        "OBJPS": {
+          "type": "string",
+          "description": "Object Identification"
+        },
+        "SPRPS": {
+          "type": "string",
+          "description": "Lock Indicator for HR Master Data Record"
+        },
+        "ENDDA": {
+          "type": "string",
+          "description": "End Date"
+        },
+        "BEGDA": {
+          "type": "string",
+          "description": "Start Date"
+        },
+        "SEQNR": {
+          "type": "string",
+          "description": "Number of Infotype Record with Same Key"
+        },
+        "AEDTM": {
+          "type": "string",
+          "description": "Changed On"
+        },
+        "UNAME": {
+          "type": "string",
+          "description": "Name of Person Who Changed Object"
+        },
+        "HISTO": {
+          "type": "string",
+          "description": "Historical Record Flag"
+        },
+        "ITXEX": {
+          "type": "string",
+          "description": "Text Exists for Infotype"
+        },
+        "REFEX": {
+          "type": "string",
+          "description": "Reference Fields Exist (Primary/Secondary Costs)"
+        },
+        "ORDEX": {
+          "type": "string",
+          "description": "Confirmation Fields Exist"
+        },
+        "ITBLD": {
+          "type": "string",
+          "description": "Infotype Screen Control"
+        },
+        "PREAS": {
+          "type": "string",
+          "description": "Reason for Changing Master Data"
+        },
+        "FLAG1": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG2": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG3": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG4": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "RESE1": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "RESE2": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "GRPVL": {
+          "type": "string",
+          "description": "Grouping Value for Personnel Assignments"
+        },
+        "LGART": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "OPKEN": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "BETRG": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "WAERS": {
+          "type": "string",
+          "description": "Currency Key"
+        },
+        "ANZHL": {
+          "type": "string",
+          "description": "Number"
+        },
+        "ZEINH": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "INDBW": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "ZDATE": {
+          "type": "string",
+          "description": "First payment date"
+        },
+        "ZFPER": {
+          "type": "string",
+          "description": "First payment period"
+        },
+        "ZANZL": {
+          "type": "string",
+          "description": "Number for determining further payment dates"
+        },
+        "ZEINZ": {
+          "type": "string",
+          "description": "Time unit for determining next payment"
+        },
+        "ZUORD": {
+          "type": "string",
+          "description": "Assignment Number"
+        },
+        "UWDAT": {
+          "type": "string",
+          "description": "Date of Bank Transfer"
+        },
+        "MODEL": {
+          "type": "string",
+          "description": "Payment Model"
+        },
+        "PERNR_TEXT": {
+          "type": "string",
+          "description": "Personnel Number"
+        },
+        "INFTY_TEXT": {
+          "type": "string",
+          "description": "Infotype"
+        },
+        "SUBTY_TEXT": {
+          "type": "string",
+          "description": "Subtype"
+        },
+        "OBJPS_TEXT": {
+          "type": "string",
+          "description": "Object Identification"
+        },
+        "SPRPS_TEXT": {
+          "type": "string",
+          "description": "Lock Indicator for HR Master Data Record"
+        },
+        "ENDDA_TEXT": {
+          "type": "string",
+          "description": "End Date"
+        },
+        "BEGDA_TEXT": {
+          "type": "string",
+          "description": "Start Date"
+        },
+        "SEQNR_TEXT": {
+          "type": "string",
+          "description": "Number of Infotype Record with Same Key"
+        },
+        "AEDTM_TEXT": {
+          "type": "string",
+          "description": "Changed On"
+        },
+        "UNAME_TEXT": {
+          "type": "string",
+          "description": "Name of Person Who Changed Object"
+        },
+        "HISTO_TEXT": {
+          "type": "string",
+          "description": "Historical Record Flag"
+        },
+        "ITXEX_TEXT": {
+          "type": "string",
+          "description": "Text Exists for Infotype"
+        },
+        "REFEX_TEXT": {
+          "type": "string",
+          "description": "Reference Fields Exist (Primary/Secondary Costs)"
+        },
+        "ORDEX_TEXT": {
+          "type": "string",
+          "description": "Confirmation Fields Exist"
+        },
+        "ITBLD_TEXT": {
+          "type": "string",
+          "description": "Infotype Screen Control"
+        },
+        "PREAS_TEXT": {
+          "type": "string",
+          "description": "Reason for Changing Master Data"
+        },
+        "FLAG1_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG2_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG3_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG4_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "RESE1_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "RESE2_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "GRPVL_TEXT": {
+          "type": "string",
+          "description": "Grouping Value for Personnel Assignments"
+        },
+        "LGART_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "OPKEN_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "BETRG_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "WAERS_TEXT": {
+          "type": "string",
+          "description": "Currency Key"
+        },
+        "ANZHL_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "ZEINH_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "INDBW_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "ZDATE_TEXT": {
+          "type": "string",
+          "description": "First payment date"
+        },
+        "ZFPER_TEXT": {
+          "type": "string",
+          "description": "First payment period"
+        },
+        "ZANZL_TEXT": {
+          "type": "string",
+          "description": "Number for determining further payment dates"
+        },
+        "ZEINZ_TEXT": {
+          "type": "string",
+          "description": "Time unit for determining next payment"
+        },
+        "ZUORD_TEXT": {
+          "type": "string",
+          "description": "Assignment Number"
+        },
+        "UWDAT_TEXT": {
+          "type": "string",
+          "description": "Date of Bank Transfer"
+        },
+        "MODEL_TEXT": {
+          "type": "string",
+          "description": "Payment Model"
+        }
+      },
+      "additionalProperties": false,
+      "description": "undefined\nPayment Model"
+    },
+    "DT_P0006": {
+      "type": "object",
+      "properties": {
+        "PERNR": {
+          "type": "string",
+          "description": "Personnel Number"
+        },
+        "INFTY": {
+          "type": "string",
+          "description": "Infotype"
+        },
+        "SUBTY": {
+          "type": "string",
+          "description": "Subtype"
+        },
+        "OBJPS": {
+          "type": "string",
+          "description": "Object Identification"
+        },
+        "SPRPS": {
+          "type": "string",
+          "description": "Lock Indicator for HR Master Data Record"
+        },
+        "ENDDA": {
+          "type": "string",
+          "description": "End Date"
+        },
+        "BEGDA": {
+          "type": "string",
+          "description": "Start Date"
+        },
+        "SEQNR": {
+          "type": "string",
+          "description": "Number of Infotype Record with Same Key"
+        },
+        "AEDTM": {
+          "type": "string",
+          "description": "Changed On"
+        },
+        "UNAME": {
+          "type": "string",
+          "description": "Name of Person Who Changed Object"
+        },
+        "HISTO": {
+          "type": "string",
+          "description": "Historical Record Flag"
+        },
+        "ITXEX": {
+          "type": "string",
+          "description": "Text Exists for Infotype"
+        },
+        "REFEX": {
+          "type": "string",
+          "description": "Reference Fields Exist (Primary/Secondary Costs)"
+        },
+        "ORDEX": {
+          "type": "string",
+          "description": "Confirmation Fields Exist"
+        },
+        "ITBLD": {
+          "type": "string",
+          "description": "Infotype Screen Control"
+        },
+        "PREAS": {
+          "type": "string",
+          "description": "Reason for Changing Master Data"
+        },
+        "FLAG1": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG2": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG3": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG4": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "RESE1": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "RESE2": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "GRPVL": {
+          "type": "string",
+          "description": "Grouping Value for Personnel Assignments"
+        },
+        "ANSSA": {
+          "type": "string",
+          "description": "Address Record Type"
+        },
+        "NAME2": {
+          "type": "string",
+          "description": "Contact Name"
+        },
+        "STRAS": {
+          "type": "string",
+          "description": "Street and House Number"
+        },
+        "ORT01": {
+          "type": "string",
+          "description": "City"
+        },
+        "ORT02": {
+          "type": "string",
+          "description": "District"
+        },
+        "PSTLZ": {
+          "type": "string",
+          "description": "Postal Code"
+        },
+        "LAND1": {
+          "type": "string",
+          "description": "Country Key"
+        },
+        "TELNR": {
+          "type": "string",
+          "description": "Telephone Number"
+        },
+        "ENTKM": {
+          "type": "string",
+          "description": "Distance in Kilometers"
+        },
+        "WKWNG": {
+          "type": "string",
+          "description": "Company Housing"
+        },
+        "BUSRT": {
+          "type": "string",
+          "description": "Bus Route"
+        },
+        "LOCAT": {
+          "type": "string",
+          "description": "2nd Address Line"
+        },
+        "ADR03": {
+          "type": "string",
+          "description": "Street 2"
+        },
+        "ADR04": {
+          "type": "string",
+          "description": "Street 3"
+        },
+        "STATE": {
+          "type": "string",
+          "description": "Region (State, Province, County)"
+        },
+        "HSNMR": {
+          "type": "string",
+          "description": "House Number"
+        },
+        "POSTA": {
+          "type": "string",
+          "description": "Identification of an apartment in a building"
+        },
+        "BLDNG": {
+          "type": "string",
+          "description": "Building (number or code)"
+        },
+        "FLOOR": {
+          "type": "string",
+          "description": "Floor in building"
+        },
+        "STRDS": {
+          "type": "string",
+          "description": "Street Abbreviation"
+        },
+        "ENTK2": {
+          "type": "string",
+          "description": "Distance in Kilometers"
+        },
+        "COM01": {
+          "type": "string",
+          "description": "Communication Type"
+        },
+        "NUM01": {
+          "type": "string",
+          "description": "Communication Number"
+        },
+        "COM02": {
+          "type": "string",
+          "description": "Communication Type"
+        },
+        "NUM02": {
+          "type": "string",
+          "description": "Communication Number"
+        },
+        "COM03": {
+          "type": "string",
+          "description": "Communication Type"
+        },
+        "NUM03": {
+          "type": "string",
+          "description": "Communication Number"
+        },
+        "COM04": {
+          "type": "string",
+          "description": "Communication Type"
+        },
+        "NUM04": {
+          "type": "string",
+          "description": "Communication Number"
+        },
+        "COM05": {
+          "type": "string",
+          "description": "Communication Type"
+        },
+        "NUM05": {
+          "type": "string",
+          "description": "Communication Number"
+        },
+        "COM06": {
+          "type": "string",
+          "description": "Communication Type"
+        },
+        "NUM06": {
+          "type": "string",
+          "description": "Communication Number"
+        },
+        "INDRL": {
+          "type": "string",
+          "description": "Indicator for relationship (specification code)"
+        },
+        "COUNC": {
+          "type": "string",
+          "description": "County Code"
+        },
+        "RCTVC": {
+          "type": "string",
+          "description": "Municipal city code"
+        },
+        "OR2KK": {
+          "type": "string",
+          "description": "Second address line (Katakana)"
+        },
+        "CONKK": {
+          "type": "string",
+          "description": "Contact Person (Katakana) (Japan)"
+        },
+        "OR1KK": {
+          "type": "string",
+          "description": "First address line (Katakana)"
+        },
+        "RAILW": {
+          "type": "string",
+          "description": "Social Subscription Railway"
+        },
+        "GDS_COUNTRY": {
+          "type": "string",
+          "description": "Country"
+        },
+        "GDS_CITY": {
+          "type": "string",
+          "description": "City"
+        },
+        "GDS_SITE": {
+          "type": "string",
+          "description": "Site"
+        },
+        "INT_CHA_DATE": {
+          "type": "string",
+          "description": "Changed On"
+        },
+        "INT_CHA_BY": {
+          "type": "string",
+          "description": "Name of Person Who Changed Object"
+        },
+        "DIR_CHA_DATE": {
+          "type": "string",
+          "description": "Changed On"
+        },
+        "DIR_CHA_BY": {
+          "type": "string",
+          "description": "Name of Person Who Changed Object"
+        },
+        "ZZPLPIT": {
+          "type": "string",
+          "description": "HR-PL : Address for Tax"
+        },
+        "ZZTOIDN": {
+          "type": "string",
+          "description": "Tax office ID"
+        },
+        "ZZLTMUNICIP": {
+          "type": "string",
+          "description": "HR-LT : Municipal code"
+        },
+        "ZZLTTAX": {
+          "type": "string",
+          "description": "HR-PL : Address for Tax"
+        },
+        "ZZLRELATION": {
+          "type": "string",
+          "description": "HR-LT : Family relationship"
+        },
+        "ZZLTEMAILAD": {
+          "type": "string",
+          "description": "HR-LT : E-mail address"
+        },
+        "INT_CODE": {
+          "type": "string",
+          "description": "Internal code"
+        },
+        "INT_TEXT": {
+          "type": "string",
+          "description": "Internal code text"
+        },
+        "WORKPLACE": {
+          "type": "string",
+          "description": "Workplace"
+        },
+        "BUILDING": {
+          "type": "string",
+          "description": "Building"
+        },
+        "ROOM": {
+          "type": "string",
+          "description": "Room number"
+        },
+        "FORDEL": {
+          "type": "string",
+          "description": "Field for distribution"
+        },
+        "PERNR_TEXT": {
+          "type": "string",
+          "description": "Personnel Number"
+        },
+        "INFTY_TEXT": {
+          "type": "string",
+          "description": "Infotype"
+        },
+        "SUBTY_TEXT": {
+          "type": "string",
+          "description": "Subtype"
+        },
+        "OBJPS_TEXT": {
+          "type": "string",
+          "description": "Object Identification"
+        },
+        "SPRPS_TEXT": {
+          "type": "string",
+          "description": "Lock Indicator for HR Master Data Record"
+        },
+        "ENDDA_TEXT": {
+          "type": "string",
+          "description": "End Date"
+        },
+        "BEGDA_TEXT": {
+          "type": "string",
+          "description": "Start Date"
+        },
+        "SEQNR_TEXT": {
+          "type": "string",
+          "description": "Number of Infotype Record with Same Key"
+        },
+        "AEDTM_TEXT": {
+          "type": "string",
+          "description": "Changed On"
+        },
+        "UNAME_TEXT": {
+          "type": "string",
+          "description": "Name of Person Who Changed Object"
+        },
+        "HISTO_TEXT": {
+          "type": "string",
+          "description": "Historical Record Flag"
+        },
+        "ITXEX_TEXT": {
+          "type": "string",
+          "description": "Text Exists for Infotype"
+        },
+        "REFEX_TEXT": {
+          "type": "string",
+          "description": "Reference Fields Exist (Primary/Secondary Costs)"
+        },
+        "ORDEX_TEXT": {
+          "type": "string",
+          "description": "Confirmation Fields Exist"
+        },
+        "ITBLD_TEXT": {
+          "type": "string",
+          "description": "Infotype Screen Control"
+        },
+        "PREAS_TEXT": {
+          "type": "string",
+          "description": "Reason for Changing Master Data"
+        },
+        "FLAG1_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG2_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG3_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG4_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "RESE1_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "RESE2_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "GRPVL_TEXT": {
+          "type": "string",
+          "description": "Grouping Value for Personnel Assignments"
+        },
+        "ANSSA_TEXT": {
+          "type": "string",
+          "description": "Address Record Type"
+        },
+        "NAME2_TEXT": {
+          "type": "string",
+          "description": "Contact Name"
+        },
+        "STRAS_TEXT": {
+          "type": "string",
+          "description": "Street and House Number"
+        },
+        "ORT01_TEXT": {
+          "type": "string",
+          "description": "City"
+        },
+        "ORT02_TEXT": {
+          "type": "string",
+          "description": "District"
+        },
+        "PSTLZ_TEXT": {
+          "type": "string",
+          "description": "Postal Code"
+        },
+        "LAND1_TEXT": {
+          "type": "string",
+          "description": "Country Key"
+        },
+        "TELNR_TEXT": {
+          "type": "string",
+          "description": "Telephone Number"
+        },
+        "ENTKM_TEXT": {
+          "type": "string",
+          "description": "Distance in Kilometers"
+        },
+        "WKWNG_TEXT": {
+          "type": "string",
+          "description": "Company Housing"
+        },
+        "BUSRT_TEXT": {
+          "type": "string",
+          "description": "Bus Route"
+        },
+        "LOCAT_TEXT": {
+          "type": "string",
+          "description": "2nd Address Line"
+        },
+        "ADR03_TEXT": {
+          "type": "string",
+          "description": "Street 2"
+        },
+        "ADR04_TEXT": {
+          "type": "string",
+          "description": "Street 3"
+        },
+        "STATE_TEXT": {
+          "type": "string",
+          "description": "Region (State, Province, County)"
+        },
+        "HSNMR_TEXT": {
+          "type": "string",
+          "description": "House Number"
+        },
+        "POSTA_TEXT": {
+          "type": "string",
+          "description": "Identification of an apartment in a building"
+        },
+        "BLDNG_TEXT": {
+          "type": "string",
+          "description": "Building (number or code)"
+        },
+        "FLOOR_TEXT": {
+          "type": "string",
+          "description": "Floor in building"
+        },
+        "STRDS_TEXT": {
+          "type": "string",
+          "description": "Street Abbreviation"
+        },
+        "ENTK2_TEXT": {
+          "type": "string",
+          "description": "Distance in Kilometers"
+        },
+        "COM01_TEXT": {
+          "type": "string",
+          "description": "Communication Type"
+        },
+        "NUM01_TEXT": {
+          "type": "string",
+          "description": "Communication Number"
+        },
+        "COM02_TEXT": {
+          "type": "string",
+          "description": "Communication Type"
+        },
+        "NUM02_TEXT": {
+          "type": "string",
+          "description": "Communication Number"
+        },
+        "COM03_TEXT": {
+          "type": "string",
+          "description": "Communication Type"
+        },
+        "NUM03_TEXT": {
+          "type": "string",
+          "description": "Communication Number"
+        },
+        "COM04_TEXT": {
+          "type": "string",
+          "description": "Communication Type"
+        },
+        "NUM04_TEXT": {
+          "type": "string",
+          "description": "Communication Number"
+        },
+        "COM05_TEXT": {
+          "type": "string",
+          "description": "Communication Type"
+        },
+        "NUM05_TEXT": {
+          "type": "string",
+          "description": "Communication Number"
+        },
+        "COM06_TEXT": {
+          "type": "string",
+          "description": "Communication Type"
+        },
+        "NUM06_TEXT": {
+          "type": "string",
+          "description": "Communication Number"
+        },
+        "INDRL_TEXT": {
+          "type": "string",
+          "description": "Indicator for relationship (specification code)"
+        },
+        "COUNC_TEXT": {
+          "type": "string",
+          "description": "County Code"
+        },
+        "RCTVC_TEXT": {
+          "type": "string",
+          "description": "Municipal city code"
+        },
+        "OR2KK_TEXT": {
+          "type": "string",
+          "description": "Second address line (Katakana)"
+        },
+        "CONKK_TEXT": {
+          "type": "string",
+          "description": "Contact Person (Katakana) (Japan)"
+        },
+        "OR1KK_TEXT": {
+          "type": "string",
+          "description": "First address line (Katakana)"
+        },
+        "RAILW_TEXT": {
+          "type": "string",
+          "description": "Social Subscription Railway"
+        },
+        "GDS_COUNTRY_TEXT": {
+          "type": "string",
+          "description": "Country"
+        },
+        "GDS_CITY_TEXT": {
+          "type": "string",
+          "description": "City"
+        },
+        "GDS_SITE_TEXT": {
+          "type": "string",
+          "description": "Site"
+        },
+        "INT_CHA_DATE_TEXT": {
+          "type": "string",
+          "description": "Changed On"
+        },
+        "INT_CHA_BY_TEXT": {
+          "type": "string",
+          "description": "Name of Person Who Changed Object"
+        },
+        "DIR_CHA_DATE_TEXT": {
+          "type": "string",
+          "description": "Changed On"
+        },
+        "DIR_CHA_BY_TEXT": {
+          "type": "string",
+          "description": "Name of Person Who Changed Object"
+        },
+        "ZZPLPIT_TEXT": {
+          "type": "string",
+          "description": "HR-PL : Address for Tax"
+        },
+        "ZZTOIDN_TEXT": {
+          "type": "string",
+          "description": "Tax office ID"
+        },
+        "ZZLTMUNICIP_TEXT": {
+          "type": "string",
+          "description": "HR-LT : Municipal code"
+        },
+        "ZZLTTAX_TEXT": {
+          "type": "string",
+          "description": "HR-PL : Address for Tax"
+        },
+        "ZZLRELATION_TEXT": {
+          "type": "string",
+          "description": "HR-LT : Family relationship"
+        },
+        "ZZLTEMAILAD_TEXT": {
+          "type": "string",
+          "description": "HR-LT : E-mail address"
+        },
+        "INT_CODE_TEXT": {
+          "type": "string",
+          "description": "Internal code"
+        },
+        "INT_TEXT_TEXT": {
+          "type": "string",
+          "description": "Internal code text"
+        },
+        "WORKPLACE_TEXT": {
+          "type": "string",
+          "description": "Workplace"
+        },
+        "BUILDING_TEXT": {
+          "type": "string",
+          "description": "Building"
+        },
+        "ROOM_TEXT": {
+          "type": "string",
+          "description": "Room number"
+        },
+        "FORDEL_TEXT": {
+          "type": "string",
+          "description": "Field for distribution"
+        }
+      },
+      "additionalProperties": false,
+      "description": "undefined\nField for distribution"
+    },
+    "DT_P0105": {
+      "type": "object",
+      "properties": {
+        "PERNR": {
+          "type": "string",
+          "description": "Personnel Number"
+        },
+        "INFTY": {
+          "type": "string",
+          "description": "Infotype"
+        },
+        "SUBTY": {
+          "type": "string",
+          "description": "Subtype"
+        },
+        "OBJPS": {
+          "type": "string",
+          "description": "Object Identification"
+        },
+        "SPRPS": {
+          "type": "string",
+          "description": "Lock Indicator for HR Master Data Record"
+        },
+        "ENDDA": {
+          "type": "string",
+          "description": "End Date"
+        },
+        "BEGDA": {
+          "type": "string",
+          "description": "Start Date"
+        },
+        "SEQNR": {
+          "type": "string",
+          "description": "Number of Infotype Record with Same Key"
+        },
+        "AEDTM": {
+          "type": "string",
+          "description": "Changed On"
+        },
+        "UNAME": {
+          "type": "string",
+          "description": "Name of Person Who Changed Object"
+        },
+        "HISTO": {
+          "type": "string",
+          "description": "Historical Record Flag"
+        },
+        "ITXEX": {
+          "type": "string",
+          "description": "Text Exists for Infotype"
+        },
+        "REFEX": {
+          "type": "string",
+          "description": "Reference Fields Exist (Primary/Secondary Costs)"
+        },
+        "ORDEX": {
+          "type": "string",
+          "description": "Confirmation Fields Exist"
+        },
+        "ITBLD": {
+          "type": "string",
+          "description": "Infotype Screen Control"
+        },
+        "PREAS": {
+          "type": "string",
+          "description": "Reason for Changing Master Data"
+        },
+        "FLAG1": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG2": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG3": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG4": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "RESE1": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "RESE2": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "GRPVL": {
+          "type": "string",
+          "description": "Grouping Value for Personnel Assignments"
+        },
+        "USRTY": {
+          "type": "string",
+          "description": "Communication Type"
+        },
+        "USRID": {
+          "type": "string",
+          "description": "Communication Identification/Number"
+        },
+        "USRID_LONG": {
+          "type": "string",
+          "description": "Communication: Long Identification/Number"
+        },
+        "ZZPC": {
+          "type": "string"
+        },
+        "PERNR_TEXT": {
+          "type": "string",
+          "description": "Personnel Number"
+        },
+        "INFTY_TEXT": {
+          "type": "string",
+          "description": "Infotype"
+        },
+        "SUBTY_TEXT": {
+          "type": "string",
+          "description": "Subtype"
+        },
+        "OBJPS_TEXT": {
+          "type": "string",
+          "description": "Object Identification"
+        },
+        "SPRPS_TEXT": {
+          "type": "string",
+          "description": "Lock Indicator for HR Master Data Record"
+        },
+        "ENDDA_TEXT": {
+          "type": "string",
+          "description": "End Date"
+        },
+        "BEGDA_TEXT": {
+          "type": "string",
+          "description": "Start Date"
+        },
+        "SEQNR_TEXT": {
+          "type": "string",
+          "description": "Number of Infotype Record with Same Key"
+        },
+        "AEDTM_TEXT": {
+          "type": "string",
+          "description": "Changed On"
+        },
+        "UNAME_TEXT": {
+          "type": "string",
+          "description": "Name of Person Who Changed Object"
+        },
+        "HISTO_TEXT": {
+          "type": "string",
+          "description": "Historical Record Flag"
+        },
+        "ITXEX_TEXT": {
+          "type": "string",
+          "description": "Text Exists for Infotype"
+        },
+        "REFEX_TEXT": {
+          "type": "string",
+          "description": "Reference Fields Exist (Primary/Secondary Costs)"
+        },
+        "ORDEX_TEXT": {
+          "type": "string",
+          "description": "Confirmation Fields Exist"
+        },
+        "ITBLD_TEXT": {
+          "type": "string",
+          "description": "Infotype Screen Control"
+        },
+        "PREAS_TEXT": {
+          "type": "string",
+          "description": "Reason for Changing Master Data"
+        },
+        "FLAG1_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG2_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG3_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG4_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "RESE1_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "RESE2_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "GRPVL_TEXT": {
+          "type": "string",
+          "description": "Grouping Value for Personnel Assignments"
+        },
+        "USRTY_TEXT": {
+          "type": "string",
+          "description": "Communication Type"
+        },
+        "USRID_TEXT": {
+          "type": "string",
+          "description": "Communication Identification/Number"
+        },
+        "USRID_LONG_TEXT": {
+          "type": "string",
+          "description": "Communication: Long Identification/Number"
+        },
+        "ZZPC_TEXT": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "description": "undefined\nCommunication: Long Identification/Number"
+    },
+    "DT_P0002": {
+      "type": "object",
+      "properties": {
+        "PERNR": {
+          "type": "string",
+          "description": "Personnel Number"
+        },
+        "INFTY": {
+          "type": "string",
+          "description": "Infotype"
+        },
+        "SUBTY": {
+          "type": "string",
+          "description": "Subtype"
+        },
+        "OBJPS": {
+          "type": "string",
+          "description": "Object Identification"
+        },
+        "SPRPS": {
+          "type": "string",
+          "description": "Lock Indicator for HR Master Data Record"
+        },
+        "ENDDA": {
+          "type": "string",
+          "description": "End Date"
+        },
+        "BEGDA": {
+          "type": "string",
+          "description": "Start Date"
+        },
+        "SEQNR": {
+          "type": "string",
+          "description": "Number of Infotype Record with Same Key"
+        },
+        "AEDTM": {
+          "type": "string",
+          "description": "Changed On"
+        },
+        "UNAME": {
+          "type": "string",
+          "description": "Name of Person Who Changed Object"
+        },
+        "HISTO": {
+          "type": "string",
+          "description": "Historical Record Flag"
+        },
+        "ITXEX": {
+          "type": "string",
+          "description": "Text Exists for Infotype"
+        },
+        "REFEX": {
+          "type": "string",
+          "description": "Reference Fields Exist (Primary/Secondary Costs)"
+        },
+        "ORDEX": {
+          "type": "string",
+          "description": "Confirmation Fields Exist"
+        },
+        "ITBLD": {
+          "type": "string",
+          "description": "Infotype Screen Control"
+        },
+        "PREAS": {
+          "type": "string",
+          "description": "Reason for Changing Master Data"
+        },
+        "FLAG1": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG2": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG3": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG4": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "RESE1": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "RESE2": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "GRPVL": {
+          "type": "string",
+          "description": "Grouping Value for Personnel Assignments"
+        },
+        "INITS": {
+          "type": "string",
+          "description": "Initials"
+        },
+        "NACHN": {
+          "type": "string",
+          "description": "Last Name"
+        },
+        "NAME2": {
+          "type": "string",
+          "description": "Name at Birth"
+        },
+        "NACH2": {
+          "type": "string",
+          "description": "Second Name"
+        },
+        "VORNA": {
+          "type": "string",
+          "description": "First Name"
+        },
+        "CNAME": {
+          "type": "string",
+          "description": "Complete Name"
+        },
+        "TITEL": {
+          "type": "string",
+          "description": "Title"
+        },
+        "TITL2": {
+          "type": "string",
+          "description": "Second Title"
+        },
+        "NAMZU": {
+          "type": "string",
+          "description": "Other Title"
+        },
+        "VORSW": {
+          "type": "string",
+          "description": "Name Prefix"
+        },
+        "VORS2": {
+          "type": "string",
+          "description": "Second Name Prefix"
+        },
+        "RUFNM": {
+          "type": "string",
+          "description": "Nickname"
+        },
+        "MIDNM": {
+          "type": "string",
+          "description": "Middle Name"
+        },
+        "KNZNM": {
+          "type": "string",
+          "description": "Name Format Indicator for Employee in a List"
+        },
+        "ANRED": {
+          "type": "string",
+          "description": "Form-of-Address Key"
+        },
+        "GESCH": {
+          "type": "string",
+          "description": "Gender Key"
+        },
+        "GBDAT": {
+          "type": "string",
+          "description": "Date of Birth"
+        },
+        "GBLND": {
+          "type": "string",
+          "description": "Country of Birth"
+        },
+        "GBDEP": {
+          "type": "string",
+          "description": "State"
+        },
+        "GBORT": {
+          "type": "string",
+          "description": "Birthplace"
+        },
+        "NATIO": {
+          "type": "string",
+          "description": "Nationality"
+        },
+        "NATI2": {
+          "type": "string",
+          "description": "Second Nationality"
+        },
+        "NATI3": {
+          "type": "string",
+          "description": "Third Nationality"
+        },
+        "SPRSL": {
+          "type": "string",
+          "description": "Communication Language"
+        },
+        "KONFE": {
+          "type": "string",
+          "description": "Religious Denomination Key"
+        },
+        "FAMST": {
+          "type": "string",
+          "description": "Marital Status Key"
+        },
+        "FAMDT": {
+          "type": "string",
+          "description": "Valid From Date of Current Marital Status"
+        },
+        "ANZKD": {
+          "type": "string",
+          "description": "Number of Children"
+        },
+        "NACON": {
+          "type": "string",
+          "description": "Name Connection"
+        },
+        "PERMO": {
+          "type": "string",
+          "description": "Modifier for Personnel Identifier"
+        },
+        "PERID": {
+          "type": "string",
+          "description": "Personnel ID Number"
+        },
+        "GBPAS": {
+          "type": "string",
+          "description": "Date of Birth According to Passport"
+        },
+        "FNAMK": {
+          "type": "string",
+          "description": "First name (Katakana)"
+        },
+        "LNAMK": {
+          "type": "string",
+          "description": "Last name (Katakana)"
+        },
+        "FNAMR": {
+          "type": "string",
+          "description": "First Name (Romaji)"
+        },
+        "LNAMR": {
+          "type": "string",
+          "description": "Last Name (Romaji)"
+        },
+        "NABIK": {
+          "type": "string",
+          "description": "Name of Birth (Katakana)"
+        },
+        "NABIR": {
+          "type": "string",
+          "description": "Name of Birth (Romaji)"
+        },
+        "NICKK": {
+          "type": "string",
+          "description": "Koseki (Katakana)"
+        },
+        "NICKR": {
+          "type": "string",
+          "description": "Koseki (Romaji)"
+        },
+        "GBJHR": {
+          "type": "string",
+          "description": "Year of Birth"
+        },
+        "GBMON": {
+          "type": "string",
+          "description": "Month of Birth"
+        },
+        "GBTAG": {
+          "type": "string",
+          "description": "Birth Date (to Month/Year)"
+        },
+        "NCHMC": {
+          "type": "string",
+          "description": "Last Name (Field for Search Help)"
+        },
+        "VNAMC": {
+          "type": "string",
+          "description": "First Name (Field for Search Help)"
+        },
+        "NAMZ2": {
+          "type": "string",
+          "description": "Name Affix for Name at Birth"
+        },
+        "ZZFAMSUPPORT": {
+          "type": "string",
+          "description": "Family supporter"
+        },
+        "ZZNACHNEN": {
+          "type": "string",
+          "description": "Last Name"
+        },
+        "ZZVORNAEN": {
+          "type": "string",
+          "description": "First Name"
+        },
+        "ZZSINUM": {
+          "type": "string",
+          "description": "HR-LT : SI Number"
+        },
+        "PERNR_TEXT": {
+          "type": "string",
+          "description": "Personnel Number"
+        },
+        "INFTY_TEXT": {
+          "type": "string",
+          "description": "Infotype"
+        },
+        "SUBTY_TEXT": {
+          "type": "string",
+          "description": "Subtype"
+        },
+        "OBJPS_TEXT": {
+          "type": "string",
+          "description": "Object Identification"
+        },
+        "SPRPS_TEXT": {
+          "type": "string",
+          "description": "Lock Indicator for HR Master Data Record"
+        },
+        "ENDDA_TEXT": {
+          "type": "string",
+          "description": "End Date"
+        },
+        "BEGDA_TEXT": {
+          "type": "string",
+          "description": "Start Date"
+        },
+        "SEQNR_TEXT": {
+          "type": "string",
+          "description": "Number of Infotype Record with Same Key"
+        },
+        "AEDTM_TEXT": {
+          "type": "string",
+          "description": "Changed On"
+        },
+        "UNAME_TEXT": {
+          "type": "string",
+          "description": "Name of Person Who Changed Object"
+        },
+        "HISTO_TEXT": {
+          "type": "string",
+          "description": "Historical Record Flag"
+        },
+        "ITXEX_TEXT": {
+          "type": "string",
+          "description": "Text Exists for Infotype"
+        },
+        "REFEX_TEXT": {
+          "type": "string",
+          "description": "Reference Fields Exist (Primary/Secondary Costs)"
+        },
+        "ORDEX_TEXT": {
+          "type": "string",
+          "description": "Confirmation Fields Exist"
+        },
+        "ITBLD_TEXT": {
+          "type": "string",
+          "description": "Infotype Screen Control"
+        },
+        "PREAS_TEXT": {
+          "type": "string",
+          "description": "Reason for Changing Master Data"
+        },
+        "FLAG1_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG2_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG3_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG4_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "RESE1_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "RESE2_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "GRPVL_TEXT": {
+          "type": "string",
+          "description": "Grouping Value for Personnel Assignments"
+        },
+        "INITS_TEXT": {
+          "type": "string",
+          "description": "Initials"
+        },
+        "NACHN_TEXT": {
+          "type": "string",
+          "description": "Last Name"
+        },
+        "NAME2_TEXT": {
+          "type": "string",
+          "description": "Name at Birth"
+        },
+        "NACH2_TEXT": {
+          "type": "string",
+          "description": "Second Name"
+        },
+        "VORNA_TEXT": {
+          "type": "string",
+          "description": "First Name"
+        },
+        "CNAME_TEXT": {
+          "type": "string",
+          "description": "Complete Name"
+        },
+        "TITEL_TEXT": {
+          "type": "string",
+          "description": "Title"
+        },
+        "TITL2_TEXT": {
+          "type": "string",
+          "description": "Second Title"
+        },
+        "NAMZU_TEXT": {
+          "type": "string",
+          "description": "Other Title"
+        },
+        "VORSW_TEXT": {
+          "type": "string",
+          "description": "Name Prefix"
+        },
+        "VORS2_TEXT": {
+          "type": "string",
+          "description": "Second Name Prefix"
+        },
+        "RUFNM_TEXT": {
+          "type": "string",
+          "description": "Nickname"
+        },
+        "MIDNM_TEXT": {
+          "type": "string",
+          "description": "Middle Name"
+        },
+        "KNZNM_TEXT": {
+          "type": "string",
+          "description": "Name Format Indicator for Employee in a List"
+        },
+        "ANRED_TEXT": {
+          "type": "string",
+          "description": "Form-of-Address Key"
+        },
+        "GESCH_TEXT": {
+          "type": "string",
+          "description": "Gender Key"
+        },
+        "GBDAT_TEXT": {
+          "type": "string",
+          "description": "Date of Birth"
+        },
+        "GBLND_TEXT": {
+          "type": "string",
+          "description": "Country of Birth"
+        },
+        "GBDEP_TEXT": {
+          "type": "string",
+          "description": "State"
+        },
+        "GBORT_TEXT": {
+          "type": "string",
+          "description": "Birthplace"
+        },
+        "NATIO_TEXT": {
+          "type": "string",
+          "description": "Nationality"
+        },
+        "NATI2_TEXT": {
+          "type": "string",
+          "description": "Second Nationality"
+        },
+        "NATI3_TEXT": {
+          "type": "string",
+          "description": "Third Nationality"
+        },
+        "SPRSL_TEXT": {
+          "type": "string",
+          "description": "Communication Language"
+        },
+        "KONFE_TEXT": {
+          "type": "string",
+          "description": "Religious Denomination Key"
+        },
+        "FAMST_TEXT": {
+          "type": "string",
+          "description": "Marital Status Key"
+        },
+        "FAMDT_TEXT": {
+          "type": "string",
+          "description": "Valid From Date of Current Marital Status"
+        },
+        "ANZKD_TEXT": {
+          "type": "string",
+          "description": "Number of Children"
+        },
+        "NACON_TEXT": {
+          "type": "string",
+          "description": "Name Connection"
+        },
+        "PERMO_TEXT": {
+          "type": "string",
+          "description": "Modifier for Personnel Identifier"
+        },
+        "PERID_TEXT": {
+          "type": "string",
+          "description": "Personnel ID Number"
+        },
+        "GBPAS_TEXT": {
+          "type": "string",
+          "description": "Date of Birth According to Passport"
+        },
+        "FNAMK_TEXT": {
+          "type": "string",
+          "description": "First name (Katakana)"
+        },
+        "LNAMK_TEXT": {
+          "type": "string",
+          "description": "Last name (Katakana)"
+        },
+        "FNAMR_TEXT": {
+          "type": "string",
+          "description": "First Name (Romaji)"
+        },
+        "LNAMR_TEXT": {
+          "type": "string",
+          "description": "Last Name (Romaji)"
+        },
+        "NABIK_TEXT": {
+          "type": "string",
+          "description": "Name of Birth (Katakana)"
+        },
+        "NABIR_TEXT": {
+          "type": "string",
+          "description": "Name of Birth (Romaji)"
+        },
+        "NICKK_TEXT": {
+          "type": "string",
+          "description": "Koseki (Katakana)"
+        },
+        "NICKR_TEXT": {
+          "type": "string",
+          "description": "Koseki (Romaji)"
+        },
+        "GBJHR_TEXT": {
+          "type": "string",
+          "description": "Year of Birth"
+        },
+        "GBMON_TEXT": {
+          "type": "string",
+          "description": "Month of Birth"
+        },
+        "GBTAG_TEXT": {
+          "type": "string",
+          "description": "Birth Date (to Month/Year)"
+        },
+        "NCHMC_TEXT": {
+          "type": "string",
+          "description": "Last Name (Field for Search Help)"
+        },
+        "VNAMC_TEXT": {
+          "type": "string",
+          "description": "First Name (Field for Search Help)"
+        },
+        "NAMZ2_TEXT": {
+          "type": "string",
+          "description": "Name Affix for Name at Birth"
+        },
+        "ZZFAMSUPPORT_TEXT": {
+          "type": "string",
+          "description": "Family supporter"
+        },
+        "ZZNACHNEN_TEXT": {
+          "type": "string",
+          "description": "Last Name"
+        },
+        "ZZVORNAEN_TEXT": {
+          "type": "string",
+          "description": "First Name"
+        },
+        "ZZSINUM_TEXT": {
+          "type": "string",
+          "description": "HR-LT : SI Number"
+        }
+      },
+      "additionalProperties": false,
+      "description": "undefined\nHR-LT : SI Number"
+    },
+    "DT_P0001": {
+      "type": "object",
+      "properties": {
+        "PERNR": {
+          "type": "string",
+          "description": "Personnel Number"
+        },
+        "INFTY": {
+          "type": "string",
+          "description": "Infotype"
+        },
+        "SUBTY": {
+          "type": "string",
+          "description": "Subtype"
+        },
+        "OBJPS": {
+          "type": "string",
+          "description": "Object Identification"
+        },
+        "SPRPS": {
+          "type": "string",
+          "description": "Lock Indicator for HR Master Data Record"
+        },
+        "ENDDA": {
+          "type": "string",
+          "description": "End Date"
+        },
+        "BEGDA": {
+          "type": "string",
+          "description": "Start Date"
+        },
+        "SEQNR": {
+          "type": "string",
+          "description": "Number of Infotype Record with Same Key"
+        },
+        "AEDTM": {
+          "type": "string",
+          "description": "Changed On"
+        },
+        "UNAME": {
+          "type": "string",
+          "description": "Name of Person Who Changed Object"
+        },
+        "HISTO": {
+          "type": "string",
+          "description": "Historical Record Flag"
+        },
+        "ITXEX": {
+          "type": "string",
+          "description": "Text Exists for Infotype"
+        },
+        "REFEX": {
+          "type": "string",
+          "description": "Reference Fields Exist (Primary/Secondary Costs)"
+        },
+        "ORDEX": {
+          "type": "string",
+          "description": "Confirmation Fields Exist"
+        },
+        "ITBLD": {
+          "type": "string",
+          "description": "Infotype Screen Control"
+        },
+        "PREAS": {
+          "type": "string",
+          "description": "Reason for Changing Master Data"
+        },
+        "FLAG1": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG2": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG3": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG4": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "RESE1": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "RESE2": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "GRPVL": {
+          "type": "string",
+          "description": "Grouping Value for Personnel Assignments"
+        },
+        "BUKRS": {
+          "type": "string",
+          "description": "Company Code"
+        },
+        "WERKS": {
+          "type": "string",
+          "description": "Personnel Area"
+        },
+        "PERSG": {
+          "type": "string",
+          "description": "Employee Group"
+        },
+        "PERSK": {
+          "type": "string",
+          "description": "Employee Subgroup"
+        },
+        "VDSK1": {
+          "type": "string",
+          "description": "Organizational Key"
+        },
+        "GSBER": {
+          "type": "string",
+          "description": "Business Area"
+        },
+        "BTRTL": {
+          "type": "string",
+          "description": "Personnel Subarea"
+        },
+        "JUPER": {
+          "type": "string",
+          "description": "Legal Person"
+        },
+        "ABKRS": {
+          "type": "string",
+          "description": "Payroll Area"
+        },
+        "ANSVH": {
+          "type": "string",
+          "description": "Work Contract"
+        },
+        "KOSTL": {
+          "type": "string",
+          "description": "Cost Center"
+        },
+        "ORGEH": {
+          "type": "string",
+          "description": "Organizational Unit"
+        },
+        "PLANS": {
+          "type": "string",
+          "description": "Position"
+        },
+        "STELL": {
+          "type": "string",
+          "description": "Job"
+        },
+        "MSTBR": {
+          "type": "string",
+          "description": "Supervisor Area"
+        },
+        "SACHA": {
+          "type": "string",
+          "description": "Payroll Administrator"
+        },
+        "SACHP": {
+          "type": "string",
+          "description": "Administrator for HR Master Data"
+        },
+        "SACHZ": {
+          "type": "string",
+          "description": "Administrator for Time Recording"
+        },
+        "SNAME": {
+          "type": "string",
+          "description": "Employee's Name (Sortable by LAST NAME FIRST NAME)"
+        },
+        "ENAME": {
+          "type": "string",
+          "description": "Formatted Name of Employee or Applicant"
+        },
+        "OTYPE": {
+          "type": "string",
+          "description": "Object Type"
+        },
+        "SBMOD": {
+          "type": "string",
+          "description": "Administrator Group"
+        },
+        "KOKRS": {
+          "type": "string",
+          "description": "Controlling Area"
+        },
+        "FISTL": {
+          "type": "string",
+          "description": "Funds Center"
+        },
+        "GEBER": {
+          "type": "string",
+          "description": "Fund"
+        },
+        "FKBER": {
+          "type": "string",
+          "description": "Functional Area"
+        },
+        "GRANT_NBR": {
+          "type": "string",
+          "description": "Grant"
+        },
+        "SGMNT": {
+          "type": "string",
+          "description": "Segment for Segmental Reporting"
+        },
+        "BUDGET_PD": {
+          "type": "string",
+          "description": "FM: Budget Period"
+        },
+        "ZZDIART": {
+          "type": "string"
+        },
+        "ZZPRODUKT": {
+          "type": "string"
+        },
+        "ZZBUSAREA": {
+          "type": "string",
+          "description": "Custom Business Area ID"
+        },
+        "ZZMANAGER": {
+          "type": "string",
+          "description": "Manager"
+        },
+        "ZZCERTIFICATE": {
+          "type": "string",
+          "description": "Certificate field for 113 Relacom"
+        },
+        "ZALTRPNR": {
+          "type": "string",
+          "description": "Alternative PNR code"
+        },
+        "PERNR_TEXT": {
+          "type": "string",
+          "description": "Personnel Number"
+        },
+        "INFTY_TEXT": {
+          "type": "string",
+          "description": "Infotype"
+        },
+        "SUBTY_TEXT": {
+          "type": "string",
+          "description": "Subtype"
+        },
+        "OBJPS_TEXT": {
+          "type": "string",
+          "description": "Object Identification"
+        },
+        "SPRPS_TEXT": {
+          "type": "string",
+          "description": "Lock Indicator for HR Master Data Record"
+        },
+        "ENDDA_TEXT": {
+          "type": "string",
+          "description": "End Date"
+        },
+        "BEGDA_TEXT": {
+          "type": "string",
+          "description": "Start Date"
+        },
+        "SEQNR_TEXT": {
+          "type": "string",
+          "description": "Number of Infotype Record with Same Key"
+        },
+        "AEDTM_TEXT": {
+          "type": "string",
+          "description": "Changed On"
+        },
+        "UNAME_TEXT": {
+          "type": "string",
+          "description": "Name of Person Who Changed Object"
+        },
+        "HISTO_TEXT": {
+          "type": "string",
+          "description": "Historical Record Flag"
+        },
+        "ITXEX_TEXT": {
+          "type": "string",
+          "description": "Text Exists for Infotype"
+        },
+        "REFEX_TEXT": {
+          "type": "string",
+          "description": "Reference Fields Exist (Primary/Secondary Costs)"
+        },
+        "ORDEX_TEXT": {
+          "type": "string",
+          "description": "Confirmation Fields Exist"
+        },
+        "ITBLD_TEXT": {
+          "type": "string",
+          "description": "Infotype Screen Control"
+        },
+        "PREAS_TEXT": {
+          "type": "string",
+          "description": "Reason for Changing Master Data"
+        },
+        "FLAG1_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG2_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG3_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG4_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "RESE1_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "RESE2_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "GRPVL_TEXT": {
+          "type": "string",
+          "description": "Grouping Value for Personnel Assignments"
+        },
+        "BUKRS_TEXT": {
+          "type": "string",
+          "description": "Company Code"
+        },
+        "WERKS_TEXT": {
+          "type": "string",
+          "description": "Personnel Area"
+        },
+        "PERSG_TEXT": {
+          "type": "string",
+          "description": "Employee Group"
+        },
+        "PERSK_TEXT": {
+          "type": "string",
+          "description": "Employee Subgroup"
+        },
+        "VDSK1_TEXT": {
+          "type": "string",
+          "description": "Organizational Key"
+        },
+        "GSBER_TEXT": {
+          "type": "string",
+          "description": "Business Area"
+        },
+        "BTRTL_TEXT": {
+          "type": "string",
+          "description": "Personnel Subarea"
+        },
+        "JUPER_TEXT": {
+          "type": "string",
+          "description": "Legal Person"
+        },
+        "ABKRS_TEXT": {
+          "type": "string",
+          "description": "Payroll Area"
+        },
+        "ANSVH_TEXT": {
+          "type": "string",
+          "description": "Work Contract"
+        },
+        "KOSTL_TEXT": {
+          "type": "string",
+          "description": "Cost Center"
+        },
+        "ORGEH_TEXT": {
+          "type": "string",
+          "description": "Organizational Unit"
+        },
+        "PLANS_TEXT": {
+          "type": "string",
+          "description": "Position"
+        },
+        "STELL_TEXT": {
+          "type": "string",
+          "description": "Job"
+        },
+        "MSTBR_TEXT": {
+          "type": "string",
+          "description": "Supervisor Area"
+        },
+        "SACHA_TEXT": {
+          "type": "string",
+          "description": "Payroll Administrator"
+        },
+        "SACHP_TEXT": {
+          "type": "string",
+          "description": "Administrator for HR Master Data"
+        },
+        "SACHZ_TEXT": {
+          "type": "string",
+          "description": "Administrator for Time Recording"
+        },
+        "SNAME_TEXT": {
+          "type": "string",
+          "description": "Employee's Name (Sortable by LAST NAME FIRST NAME)"
+        },
+        "ENAME_TEXT": {
+          "type": "string",
+          "description": "Formatted Name of Employee or Applicant"
+        },
+        "OTYPE_TEXT": {
+          "type": "string",
+          "description": "Object Type"
+        },
+        "SBMOD_TEXT": {
+          "type": "string",
+          "description": "Administrator Group"
+        },
+        "KOKRS_TEXT": {
+          "type": "string",
+          "description": "Controlling Area"
+        },
+        "FISTL_TEXT": {
+          "type": "string",
+          "description": "Funds Center"
+        },
+        "GEBER_TEXT": {
+          "type": "string",
+          "description": "Fund"
+        },
+        "FKBER_TEXT": {
+          "type": "string",
+          "description": "Functional Area"
+        },
+        "GRANT_NBR_TEXT": {
+          "type": "string",
+          "description": "Grant"
+        },
+        "SGMNT_TEXT": {
+          "type": "string",
+          "description": "Segment for Segmental Reporting"
+        },
+        "BUDGET_PD_TEXT": {
+          "type": "string",
+          "description": "FM: Budget Period"
+        },
+        "ZZDIART_TEXT": {
+          "type": "string"
+        },
+        "ZZPRODUKT_TEXT": {
+          "type": "string"
+        },
+        "ZZBUSAREA_TEXT": {
+          "type": "string",
+          "description": "Custom Business Area ID"
+        },
+        "ZZMANAGER_TEXT": {
+          "type": "string",
+          "description": "Manager"
+        },
+        "ZZCERTIFICATE_TEXT": {
+          "type": "string",
+          "description": "Certificate field for 113 Relacom"
+        },
+        "ZALTRPNR_TEXT": {
+          "type": "string",
+          "description": "Alternative PNR code"
+        }
+      },
+      "additionalProperties": false,
+      "description": "undefined\nAlternative PNR code"
+    },
+    "DT_P0008": {
+      "type": "object",
+      "properties": {
+        "PERNR": {
+          "type": "string",
+          "description": "Personnel Number"
+        },
+        "INFTY": {
+          "type": "string",
+          "description": "Infotype"
+        },
+        "SUBTY": {
+          "type": "string",
+          "description": "Subtype"
+        },
+        "OBJPS": {
+          "type": "string",
+          "description": "Object Identification"
+        },
+        "SPRPS": {
+          "type": "string",
+          "description": "Lock Indicator for HR Master Data Record"
+        },
+        "ENDDA": {
+          "type": "string",
+          "description": "End Date"
+        },
+        "BEGDA": {
+          "type": "string",
+          "description": "Start Date"
+        },
+        "SEQNR": {
+          "type": "string",
+          "description": "Number of Infotype Record with Same Key"
+        },
+        "AEDTM": {
+          "type": "string",
+          "description": "Changed On"
+        },
+        "UNAME": {
+          "type": "string",
+          "description": "Name of Person Who Changed Object"
+        },
+        "HISTO": {
+          "type": "string",
+          "description": "Historical Record Flag"
+        },
+        "ITXEX": {
+          "type": "string",
+          "description": "Text Exists for Infotype"
+        },
+        "REFEX": {
+          "type": "string",
+          "description": "Reference Fields Exist (Primary/Secondary Costs)"
+        },
+        "ORDEX": {
+          "type": "string",
+          "description": "Confirmation Fields Exist"
+        },
+        "ITBLD": {
+          "type": "string",
+          "description": "Infotype Screen Control"
+        },
+        "PREAS": {
+          "type": "string",
+          "description": "Reason for Changing Master Data"
+        },
+        "FLAG1": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG2": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG3": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG4": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "RESE1": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "RESE2": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "GRPVL": {
+          "type": "string",
+          "description": "Grouping Value for Personnel Assignments"
+        },
+        "TRFAR": {
+          "type": "string",
+          "description": "Pay scale type"
+        },
+        "TRFGB": {
+          "type": "string",
+          "description": "Pay Scale Area"
+        },
+        "TRFGR": {
+          "type": "string",
+          "description": "Pay Scale Group"
+        },
+        "TRFST": {
+          "type": "string",
+          "description": "Pay Scale Level"
+        },
+        "STVOR": {
+          "type": "string",
+          "description": "Date of Next Increase"
+        },
+        "ORZST": {
+          "type": "string",
+          "description": "Cost of Living Allowance Level"
+        },
+        "PARTN": {
+          "type": "string",
+          "description": "Partnership"
+        },
+        "WAERS": {
+          "type": "string",
+          "description": "Currency Key"
+        },
+        "VGLTA": {
+          "type": "string",
+          "description": "Comparison pay scale type"
+        },
+        "VGLGB": {
+          "type": "string",
+          "description": "Comparison pay scale area"
+        },
+        "VGLGR": {
+          "type": "string",
+          "description": "Comparison pay scale group"
+        },
+        "VGLST": {
+          "type": "string",
+          "description": "Comparison pay scale level"
+        },
+        "VGLSV": {
+          "type": "string",
+          "description": "Date of Next Increase"
+        },
+        "BSGRD": {
+          "type": "string",
+          "description": "Capacity Utilization Level"
+        },
+        "DIVGV": {
+          "type": "string",
+          "description": "Working Hours per Payroll Period"
+        },
+        "ANSAL": {
+          "type": "string",
+          "description": "Annual salary"
+        },
+        "FALGK": {
+          "type": "string",
+          "description": "Case group catalog"
+        },
+        "FALGR": {
+          "type": "string",
+          "description": "Case group"
+        },
+        "LGA01": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET01": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ01": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN01": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK01": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA02": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET02": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ02": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN02": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK02": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA03": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET03": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ03": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN03": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK03": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA04": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET04": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ04": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN04": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK04": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA05": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET05": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ05": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN05": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK05": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA06": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET06": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ06": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN06": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK06": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA07": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET07": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ07": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN07": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK07": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA08": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET08": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ08": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN08": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK08": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA09": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET09": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ09": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN09": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK09": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA10": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET10": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ10": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN10": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK10": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA11": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET11": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ11": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN11": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK11": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA12": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET12": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ12": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN12": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK12": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA13": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET13": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ13": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN13": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK13": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA14": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET14": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ14": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN14": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK14": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA15": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET15": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ15": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN15": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK15": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA16": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET16": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ16": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN16": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK16": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA17": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET17": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ17": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN17": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK17": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA18": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET18": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ18": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN18": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK18": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA19": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET19": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ19": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN19": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK19": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA20": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET20": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ20": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN20": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK20": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA21": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET21": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ21": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN21": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK21": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA22": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET22": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ22": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN22": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK22": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA23": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET23": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ23": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN23": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK23": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA24": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET24": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ24": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN24": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK24": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA25": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET25": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ25": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN25": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK25": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA26": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET26": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ26": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN26": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK26": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA27": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET27": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ27": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN27": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK27": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA28": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET28": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ28": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN28": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK28": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA29": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET29": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ29": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN29": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK29": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA30": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET30": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ30": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN30": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK30": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA31": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET31": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ31": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN31": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK31": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA32": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET32": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ32": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN32": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK32": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA33": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET33": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ33": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN33": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK33": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA34": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET34": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ34": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN34": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK34": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA35": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET35": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ35": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN35": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK35": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA36": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET36": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ36": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN36": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK36": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA37": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET37": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ37": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN37": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK37": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA38": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET38": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ38": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN38": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK38": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA39": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET39": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ39": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN39": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK39": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA40": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET40": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ40": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN40": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK40": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "IND01": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND02": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND03": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND04": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND05": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND06": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND07": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND08": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND09": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND10": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND11": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND12": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND13": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND14": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND15": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND16": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND17": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND18": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND19": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND20": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND21": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND22": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND23": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND24": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND25": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND26": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND27": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND28": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND29": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND30": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND31": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND32": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND33": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND34": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND35": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND36": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND37": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND38": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND39": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND40": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "ANCUR": {
+          "type": "string",
+          "description": "Currency Key for Annual Salary"
+        },
+        "CPIND": {
+          "type": "string",
+          "description": "Planned compensation type"
+        },
+        "FLAGA": {
+          "type": "string",
+          "description": "General Flag"
+        },
+        "ZZKNAPP": {
+          "type": "string",
+          "description": "Single-Character Indicator"
+        },
+        "PERNR_TEXT": {
+          "type": "string",
+          "description": "Personnel Number"
+        },
+        "INFTY_TEXT": {
+          "type": "string",
+          "description": "Infotype"
+        },
+        "SUBTY_TEXT": {
+          "type": "string",
+          "description": "Subtype"
+        },
+        "OBJPS_TEXT": {
+          "type": "string",
+          "description": "Object Identification"
+        },
+        "SPRPS_TEXT": {
+          "type": "string",
+          "description": "Lock Indicator for HR Master Data Record"
+        },
+        "ENDDA_TEXT": {
+          "type": "string",
+          "description": "End Date"
+        },
+        "BEGDA_TEXT": {
+          "type": "string",
+          "description": "Start Date"
+        },
+        "SEQNR_TEXT": {
+          "type": "string",
+          "description": "Number of Infotype Record with Same Key"
+        },
+        "AEDTM_TEXT": {
+          "type": "string",
+          "description": "Changed On"
+        },
+        "UNAME_TEXT": {
+          "type": "string",
+          "description": "Name of Person Who Changed Object"
+        },
+        "HISTO_TEXT": {
+          "type": "string",
+          "description": "Historical Record Flag"
+        },
+        "ITXEX_TEXT": {
+          "type": "string",
+          "description": "Text Exists for Infotype"
+        },
+        "REFEX_TEXT": {
+          "type": "string",
+          "description": "Reference Fields Exist (Primary/Secondary Costs)"
+        },
+        "ORDEX_TEXT": {
+          "type": "string",
+          "description": "Confirmation Fields Exist"
+        },
+        "ITBLD_TEXT": {
+          "type": "string",
+          "description": "Infotype Screen Control"
+        },
+        "PREAS_TEXT": {
+          "type": "string",
+          "description": "Reason for Changing Master Data"
+        },
+        "FLAG1_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG2_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG3_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG4_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "RESE1_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "RESE2_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "GRPVL_TEXT": {
+          "type": "string",
+          "description": "Grouping Value for Personnel Assignments"
+        },
+        "TRFAR_TEXT": {
+          "type": "string",
+          "description": "Pay scale type"
+        },
+        "TRFGB_TEXT": {
+          "type": "string",
+          "description": "Pay Scale Area"
+        },
+        "TRFGR_TEXT": {
+          "type": "string",
+          "description": "Pay Scale Group"
+        },
+        "TRFST_TEXT": {
+          "type": "string",
+          "description": "Pay Scale Level"
+        },
+        "STVOR_TEXT": {
+          "type": "string",
+          "description": "Date of Next Increase"
+        },
+        "ORZST_TEXT": {
+          "type": "string",
+          "description": "Cost of Living Allowance Level"
+        },
+        "PARTN_TEXT": {
+          "type": "string",
+          "description": "Partnership"
+        },
+        "WAERS_TEXT": {
+          "type": "string",
+          "description": "Currency Key"
+        },
+        "VGLTA_TEXT": {
+          "type": "string",
+          "description": "Comparison pay scale type"
+        },
+        "VGLGB_TEXT": {
+          "type": "string",
+          "description": "Comparison pay scale area"
+        },
+        "VGLGR_TEXT": {
+          "type": "string",
+          "description": "Comparison pay scale group"
+        },
+        "VGLST_TEXT": {
+          "type": "string",
+          "description": "Comparison pay scale level"
+        },
+        "VGLSV_TEXT": {
+          "type": "string",
+          "description": "Date of Next Increase"
+        },
+        "BSGRD_TEXT": {
+          "type": "string",
+          "description": "Capacity Utilization Level"
+        },
+        "DIVGV_TEXT": {
+          "type": "string",
+          "description": "Working Hours per Payroll Period"
+        },
+        "ANSAL_TEXT": {
+          "type": "string",
+          "description": "Annual salary"
+        },
+        "FALGK_TEXT": {
+          "type": "string",
+          "description": "Case group catalog"
+        },
+        "FALGR_TEXT": {
+          "type": "string",
+          "description": "Case group"
+        },
+        "LGA01_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET01_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ01_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN01_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK01_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA02_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET02_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ02_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN02_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK02_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA03_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET03_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ03_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN03_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK03_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA04_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET04_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ04_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN04_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK04_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA05_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET05_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ05_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN05_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK05_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA06_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET06_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ06_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN06_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK06_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA07_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET07_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ07_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN07_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK07_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA08_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET08_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ08_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN08_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK08_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA09_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET09_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ09_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN09_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK09_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA10_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET10_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ10_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN10_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK10_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA11_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET11_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ11_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN11_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK11_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA12_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET12_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ12_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN12_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK12_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA13_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET13_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ13_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN13_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK13_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA14_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET14_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ14_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN14_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK14_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA15_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET15_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ15_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN15_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK15_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA16_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET16_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ16_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN16_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK16_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA17_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET17_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ17_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN17_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK17_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA18_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET18_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ18_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN18_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK18_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA19_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET19_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ19_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN19_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK19_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA20_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET20_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ20_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN20_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK20_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA21_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET21_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ21_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN21_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK21_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA22_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET22_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ22_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN22_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK22_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA23_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET23_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ23_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN23_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK23_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA24_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET24_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ24_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN24_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK24_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA25_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET25_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ25_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN25_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK25_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA26_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET26_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ26_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN26_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK26_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA27_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET27_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ27_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN27_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK27_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA28_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET28_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ28_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN28_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK28_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA29_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET29_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ29_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN29_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK29_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA30_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET30_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ30_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN30_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK30_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA31_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET31_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ31_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN31_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK31_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA32_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET32_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ32_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN32_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK32_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA33_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET33_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ33_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN33_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK33_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA34_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET34_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ34_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN34_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK34_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA35_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET35_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ35_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN35_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK35_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA36_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET36_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ36_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN36_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK36_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA37_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET37_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ37_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN37_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK37_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA38_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET38_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ38_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN38_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK38_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA39_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET39_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ39_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN39_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK39_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "LGA40_TEXT": {
+          "type": "string",
+          "description": "Wage Type"
+        },
+        "BET40_TEXT": {
+          "type": "string",
+          "description": "Wage Type Amount for Payments"
+        },
+        "ANZ40_TEXT": {
+          "type": "string",
+          "description": "Number"
+        },
+        "EIN40_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "OPK40_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "IND01_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND02_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND03_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND04_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND05_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND06_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND07_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND08_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND09_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND10_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND11_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND12_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND13_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND14_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND15_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND16_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND17_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND18_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND19_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND20_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND21_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND22_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND23_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND24_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND25_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND26_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND27_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND28_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND29_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND30_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND31_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND32_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND33_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND34_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND35_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND36_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND37_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND38_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND39_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "IND40_TEXT": {
+          "type": "string",
+          "description": "Indicator for indirect valuation"
+        },
+        "ANCUR_TEXT": {
+          "type": "string",
+          "description": "Currency Key for Annual Salary"
+        },
+        "CPIND_TEXT": {
+          "type": "string",
+          "description": "Planned compensation type"
+        },
+        "FLAGA_TEXT": {
+          "type": "string",
+          "description": "General Flag"
+        },
+        "ZZKNAPP_TEXT": {
+          "type": "string",
+          "description": "Single-Character Indicator"
+        }
+      },
+      "additionalProperties": false,
+      "description": "undefined\nSingle-Character Indicator"
+    },
+    "DT_P0009": {
+      "type": "object",
+      "properties": {
+        "PERNR": {
+          "type": "string",
+          "description": "Personnel Number"
+        },
+        "INFTY": {
+          "type": "string",
+          "description": "Infotype"
+        },
+        "SUBTY": {
+          "type": "string",
+          "description": "Subtype"
+        },
+        "OBJPS": {
+          "type": "string",
+          "description": "Object Identification"
+        },
+        "SPRPS": {
+          "type": "string",
+          "description": "Lock Indicator for HR Master Data Record"
+        },
+        "ENDDA": {
+          "type": "string",
+          "description": "End Date"
+        },
+        "BEGDA": {
+          "type": "string",
+          "description": "Start Date"
+        },
+        "SEQNR": {
+          "type": "string",
+          "description": "Number of Infotype Record with Same Key"
+        },
+        "AEDTM": {
+          "type": "string",
+          "description": "Changed On"
+        },
+        "UNAME": {
+          "type": "string",
+          "description": "Name of Person Who Changed Object"
+        },
+        "HISTO": {
+          "type": "string",
+          "description": "Historical Record Flag"
+        },
+        "ITXEX": {
+          "type": "string",
+          "description": "Text Exists for Infotype"
+        },
+        "REFEX": {
+          "type": "string",
+          "description": "Reference Fields Exist (Primary/Secondary Costs)"
+        },
+        "ORDEX": {
+          "type": "string",
+          "description": "Confirmation Fields Exist"
+        },
+        "ITBLD": {
+          "type": "string",
+          "description": "Infotype Screen Control"
+        },
+        "PREAS": {
+          "type": "string",
+          "description": "Reason for Changing Master Data"
+        },
+        "FLAG1": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG2": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG3": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG4": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "RESE1": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "RESE2": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "GRPVL": {
+          "type": "string",
+          "description": "Grouping Value for Personnel Assignments"
+        },
+        "OPKEN": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "BETRG": {
+          "type": "string",
+          "description": "Standard value"
+        },
+        "WAERS": {
+          "type": "string",
+          "description": "Payment Currency"
+        },
+        "ANZHL": {
+          "type": "string",
+          "description": "Standard Percentage"
+        },
+        "ZEINH": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "BNKSA": {
+          "type": "string",
+          "description": "Type of Bank Details Record"
+        },
+        "ZLSCH": {
+          "type": "string",
+          "description": "Payment Method"
+        },
+        "EMFTX": {
+          "type": "string",
+          "description": "Payee Text"
+        },
+        "BKPLZ": {
+          "type": "string",
+          "description": "Postal Code"
+        },
+        "BKORT": {
+          "type": "string",
+          "description": "City"
+        },
+        "BANKS": {
+          "type": "string",
+          "description": "Bank country key"
+        },
+        "BANKL": {
+          "type": "string",
+          "description": "Bank Keys"
+        },
+        "BANKN": {
+          "type": "string",
+          "description": "Bank account number"
+        },
+        "BANKP": {
+          "type": "string",
+          "description": "Check Digit for Bank No./Account"
+        },
+        "BKONT": {
+          "type": "string",
+          "description": "Bank Control Key"
+        },
+        "SWIFT": {
+          "type": "string",
+          "description": "SWIFT/BIC for International Payments"
+        },
+        "DTAWS": {
+          "type": "string",
+          "description": "Instruction key for data medium exchange"
+        },
+        "DTAMS": {
+          "type": "string",
+          "description": "Indicator for Data Medium Exchange"
+        },
+        "STCD1": {
+          "type": "string",
+          "description": "Tax Number 1"
+        },
+        "STCD2": {
+          "type": "string",
+          "description": "Tax Number 2"
+        },
+        "PSKTO": {
+          "type": "string",
+          "description": "Account Number of Bank Account At Post Office"
+        },
+        "ESRNR": {
+          "type": "string",
+          "description": "ISR Subscriber Number"
+        },
+        "ESRRE": {
+          "type": "string",
+          "description": "ISR Reference Number"
+        },
+        "ESRPZ": {
+          "type": "string",
+          "description": "ISR Check Digit"
+        },
+        "EMFSL": {
+          "type": "string",
+          "description": "Payee key for bank transfers"
+        },
+        "ZWECK": {
+          "type": "string",
+          "description": "Purpose of Bank Transfers"
+        },
+        "BTTYP": {
+          "type": "string",
+          "description": "PBS Transfer Type"
+        },
+        "PAYTY": {
+          "type": "string",
+          "description": "Payroll type"
+        },
+        "PAYID": {
+          "type": "string",
+          "description": "Payroll Identifier"
+        },
+        "OCRSN": {
+          "type": "string",
+          "description": "Reason for Off-Cycle Payroll"
+        },
+        "BONDT": {
+          "type": "string",
+          "description": "Off-cycle payroll payment date"
+        },
+        "BKREF": {
+          "type": "string",
+          "description": "Reference specifications for bank details"
+        },
+        "STRAS": {
+          "type": "string",
+          "description": "House number and street"
+        },
+        "STATE": {
+          "type": "string",
+          "description": "Region (State, Province, County)"
+        },
+        "DEBIT": {
+          "type": "string",
+          "description": "Automatic Debit Authorization Indicator"
+        },
+        "IBAN": {
+          "type": "string",
+          "description": "IBAN (International Bank Account Number)"
+        },
+        "ADRS_BANKS": {
+          "type": "string",
+          "description": "Country Key"
+        },
+        "PERNR_TEXT": {
+          "type": "string",
+          "description": "Personnel Number"
+        },
+        "INFTY_TEXT": {
+          "type": "string",
+          "description": "Infotype"
+        },
+        "SUBTY_TEXT": {
+          "type": "string",
+          "description": "Subtype"
+        },
+        "OBJPS_TEXT": {
+          "type": "string",
+          "description": "Object Identification"
+        },
+        "SPRPS_TEXT": {
+          "type": "string",
+          "description": "Lock Indicator for HR Master Data Record"
+        },
+        "ENDDA_TEXT": {
+          "type": "string",
+          "description": "End Date"
+        },
+        "BEGDA_TEXT": {
+          "type": "string",
+          "description": "Start Date"
+        },
+        "SEQNR_TEXT": {
+          "type": "string",
+          "description": "Number of Infotype Record with Same Key"
+        },
+        "AEDTM_TEXT": {
+          "type": "string",
+          "description": "Changed On"
+        },
+        "UNAME_TEXT": {
+          "type": "string",
+          "description": "Name of Person Who Changed Object"
+        },
+        "HISTO_TEXT": {
+          "type": "string",
+          "description": "Historical Record Flag"
+        },
+        "ITXEX_TEXT": {
+          "type": "string",
+          "description": "Text Exists for Infotype"
+        },
+        "REFEX_TEXT": {
+          "type": "string",
+          "description": "Reference Fields Exist (Primary/Secondary Costs)"
+        },
+        "ORDEX_TEXT": {
+          "type": "string",
+          "description": "Confirmation Fields Exist"
+        },
+        "ITBLD_TEXT": {
+          "type": "string",
+          "description": "Infotype Screen Control"
+        },
+        "PREAS_TEXT": {
+          "type": "string",
+          "description": "Reason for Changing Master Data"
+        },
+        "FLAG1_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG2_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG3_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "FLAG4_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field"
+        },
+        "RESE1_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "RESE2_TEXT": {
+          "type": "string",
+          "description": "Reserved Field/Unused Field of Length 2"
+        },
+        "GRPVL_TEXT": {
+          "type": "string",
+          "description": "Grouping Value for Personnel Assignments"
+        },
+        "OPKEN_TEXT": {
+          "type": "string",
+          "description": "Operation Indicator for Wage Types"
+        },
+        "BETRG_TEXT": {
+          "type": "string",
+          "description": "Standard value"
+        },
+        "WAERS_TEXT": {
+          "type": "string",
+          "description": "Payment Currency"
+        },
+        "ANZHL_TEXT": {
+          "type": "string",
+          "description": "Standard Percentage"
+        },
+        "ZEINH_TEXT": {
+          "type": "string",
+          "description": "Time/Measurement Unit"
+        },
+        "BNKSA_TEXT": {
+          "type": "string",
+          "description": "Type of Bank Details Record"
+        },
+        "ZLSCH_TEXT": {
+          "type": "string",
+          "description": "Payment Method"
+        },
+        "EMFTX_TEXT": {
+          "type": "string",
+          "description": "Payee Text"
+        },
+        "BKPLZ_TEXT": {
+          "type": "string",
+          "description": "Postal Code"
+        },
+        "BKORT_TEXT": {
+          "type": "string",
+          "description": "City"
+        },
+        "BANKS_TEXT": {
+          "type": "string",
+          "description": "Bank country key"
+        },
+        "BANKL_TEXT": {
+          "type": "string",
+          "description": "Bank Keys"
+        },
+        "BANKN_TEXT": {
+          "type": "string",
+          "description": "Bank account number"
+        },
+        "BANKP_TEXT": {
+          "type": "string",
+          "description": "Check Digit for Bank No./Account"
+        },
+        "BKONT_TEXT": {
+          "type": "string",
+          "description": "Bank Control Key"
+        },
+        "SWIFT_TEXT": {
+          "type": "string",
+          "description": "SWIFT/BIC for International Payments"
+        },
+        "DTAWS_TEXT": {
+          "type": "string",
+          "description": "Instruction key for data medium exchange"
+        },
+        "DTAMS_TEXT": {
+          "type": "string",
+          "description": "Indicator for Data Medium Exchange"
+        },
+        "STCD1_TEXT": {
+          "type": "string",
+          "description": "Tax Number 1"
+        },
+        "STCD2_TEXT": {
+          "type": "string",
+          "description": "Tax Number 2"
+        },
+        "PSKTO_TEXT": {
+          "type": "string",
+          "description": "Account Number of Bank Account At Post Office"
+        },
+        "ESRNR_TEXT": {
+          "type": "string",
+          "description": "ISR Subscriber Number"
+        },
+        "ESRRE_TEXT": {
+          "type": "string",
+          "description": "ISR Reference Number"
+        },
+        "ESRPZ_TEXT": {
+          "type": "string",
+          "description": "ISR Check Digit"
+        },
+        "EMFSL_TEXT": {
+          "type": "string",
+          "description": "Payee key for bank transfers"
+        },
+        "ZWECK_TEXT": {
+          "type": "string",
+          "description": "Purpose of Bank Transfers"
+        },
+        "BTTYP_TEXT": {
+          "type": "string",
+          "description": "PBS Transfer Type"
+        },
+        "PAYTY_TEXT": {
+          "type": "string",
+          "description": "Payroll type"
+        },
+        "PAYID_TEXT": {
+          "type": "string",
+          "description": "Payroll Identifier"
+        },
+        "OCRSN_TEXT": {
+          "type": "string",
+          "description": "Reason for Off-Cycle Payroll"
+        },
+        "BONDT_TEXT": {
+          "type": "string",
+          "description": "Off-cycle payroll payment date"
+        },
+        "BKREF_TEXT": {
+          "type": "string",
+          "description": "Reference specifications for bank details"
+        },
+        "STRAS_TEXT": {
+          "type": "string",
+          "description": "House number and street"
+        },
+        "STATE_TEXT": {
+          "type": "string",
+          "description": "Region (State, Province, County)"
+        },
+        "DEBIT_TEXT": {
+          "type": "string",
+          "description": "Automatic Debit Authorization Indicator"
+        },
+        "IBAN_TEXT": {
+          "type": "string",
+          "description": "IBAN (International Bank Account Number)"
+        },
+        "ADRS_BANKS_TEXT": {
+          "type": "string",
+          "description": "Country Key"
+        }
+      },
+      "additionalProperties": false,
+      "description": "undefined\nCountry Key"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+
+spring:
+  application:
+    name: sync
+  codec:
+    max-in-memory-size: 10MB
+  main:
+    banner-mode: off
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${alumni.sync.jwt.issuer-uri}
+
+  data:
+    mongodb:
+      uri: ${alumni.sync.mongodb.uri}
+      database: alumni
+      auto-index-creation: false
+
+  cloud:
+    azure:
+      servicebus:
+        connection-string: ${alumni.sync.servicebus.connection-string}
+    stream:
+      function:
+        definition: employeeStream;payslipFileStream
+      bindings:
+        employeeStream-out-0:
+          destination: ${alumni.sync.servicebus.employeedatasync.queue-name}
+        employeeStream-in-0:
+          destination: ${alumni.sync.servicebus.employeedatasync.queue-name}
+        payslipFileStream-out-0:
+          destination: ${alumni.sync.servicebus.payslipfilesync.queue-name}
+        payslipFileStream-in-0:
+          destination: ${alumni.sync.servicebus.payslipfilesync.queue-name}
+
+      servicebus:
+        bindings:
+          employeeStream-in-0:
+            consumer:
+              max-concurrent-calls: 8
+              prefetch-count: 4
+              auto-complete: false
+          employeeStream-out-0:
+            producer:
+              sync: true
+              entity-type: queue
+          payslipFileStream-in-0:
+            consumer:
+              max-concurrent-calls: 8
+              prefetch-count: 4
+              auto-complete: false
+          payslipFileStream-out-0:
+            producer:
+              sync: true
+              entity-type: queue
+
+alumni:
+  sync:
+    stream:
+      function:
+        payslip-file:
+          redelivery:
+            initial: 15_000
+            multiplier: 2
+            max-attempt: 80
+            max-delay: 600_000
+        employee:
+          redelivery:
+            initial: 15_000
+            multiplier: 2
+            max-attempt: 80
+            max-delay: 600_000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health

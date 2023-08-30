@@ -1,0 +1,32 @@
+
+logging:
+  level:
+    root: info
+    dev.zalaris.alumni: debug
+
+alumni:
+  sync:
+    mongodb:
+      uri: mongodb://alumni:mysecretpassword@localhost/alumni?authSource=alumni
+
+  app:
+    mongodb:
+      uri: mongodb://alumni:mysecretpassword@localhost/alumni?authSource=alumni
+
+sap:
+  api:
+    enabled: false
+    endpoint:
+      personalData:
+        url: http://localhost:3100/clone?user={zalarisId}
+      payrollData:
+        url: http://localhost:3100/payroll-results?user={zalarisId}
+      payslipData:
+        url: http://localhost:3100/payslip?user={zalarisId}&id={fileIdentifier}
+
+mongodb:
+  encrypt:
+    keys:
+      - version: 1
+        key: Y1IqWXUzMHJZRThCNmJRTDdURVBnbF5EaUI4cWlMZ0o=
+    fields: DtP0001.pernr,DtP0001.sname,DtP0001.ename,DtP0002.pernr,DtP0002.nachn,DtP0002.vorna,DtP0002.midnm,DtP0002.gbdat,DtP0002.gbjhr,DtP0002.gbmon,DtP0002.gbtag,DtP0002.natio,DtP0002.nchmc,DtP0002.vnamc,DtP0002.gesch,DtP0002.getchText,DtP0006.pernr,DtP0006.stras,DtP0006.pstlz,DtP0006.land1,DtP0006.hsnmr,DtP0006.posta,DtP0008.pernr,DtP0008.ansal,DtP0008.bet01,DtP0008.bet02,DtP0008.bet03,DtP0008.bet04,DtP0008.bet05,DtP0008.bet06,DtP0008.bet07,DtP0008.bet08,DtP0008.bet09,DtP0008.bet10,DtP0008.bet11,DtP0008.bet12,DtP0008.bet13,DtP0008.bet14,DtP0008.bet15,DtP0008.bet16,DtP0008.bet17,DtP0008.bet18,DtP0008.bet19,DtP0008.bet20,DtP0008.bet21,DtP0008.bet22,DtP0008.bet23,DtP0008.bet24,DtP0008.bet25,DtP0008.bet26,DtP0008.bet27,DtP0008.bet28,DtP0008.bet29,DtP0008.bet30,DtP0008.bet31,DtP0008.bet32,DtP0008.bet33,DtP0008.bet34,DtP0008.bet35,DtP0008.bet36,DtP0008.bet37,DtP0008.bet38,DtP0008.bet39,DtP0008.bet40,DtP0009.pernr,DtP0009.bankl,DtP0009.bankn,DtP0009.bkont,DtP0009.iban,DtP0014.pernr,DtP0014.betrg,DtP0014.subty,DtP0014.lgart,DtP0015.pernr,DtP0015.betrg,DtP0015.subty,DtP0015.lgart,DtP0105.pernr,DtP0105.usrid,DtP0105.usridLong,PayrollResult.pernr,PayrollResult.amountPaid,BtResult.betrg,BtResult.bankl,BtResult.bankn

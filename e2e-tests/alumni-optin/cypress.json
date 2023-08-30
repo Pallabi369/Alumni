@@ -1,0 +1,15 @@
+{
+  "viewportWidth": 1500,
+  "viewportHeight": 1000,
+  "env": {
+    "userWithAlumniRole": {
+      "user": "510-00004601",
+      "password": "Zalzal54"
+    },
+    "userWithNoAlumniRole": {
+      "user": "510-00010000",
+      "password": "Zalzal54"
+    }
+  },
+  "chromeWebSecurity": false
+}

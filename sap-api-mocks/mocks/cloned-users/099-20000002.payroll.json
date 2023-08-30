@@ -1,0 +1,961 @@
+{
+    "payrollResults": [
+        {
+            "pernr": "20000002",
+            "seqnr": "00001",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "201906",
+            "fpper": "201906",
+            "fpbeg": "20190601",
+            "fpend": "20190630",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20190614",
+            "amountPaid": "111665.27 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "111665.27 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20191027",
+                    "dtati": "160319",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00001"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00002",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "201907",
+            "fpper": "201907",
+            "fpbeg": "20190701",
+            "fpend": "20190731",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20190715",
+            "amountPaid": "56523.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "56523.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20191206",
+                    "dtati": "081606",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00002"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00003",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "201908",
+            "fpper": "201908",
+            "fpbeg": "20190801",
+            "fpend": "20190831",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20190815",
+            "amountPaid": "58982.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "58982.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20200114",
+                    "dtati": "073043",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00003"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00004",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "201909",
+            "fpper": "201909",
+            "fpbeg": "20190901",
+            "fpend": "20190930",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20190913",
+            "amountPaid": "56523.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "56523.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20200420",
+                    "dtati": "125813",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00004"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00107",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202011",
+            "fpper": "201910",
+            "fpbeg": "20191001",
+            "fpend": "20191031",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20191015",
+            "amountPaid": "56523.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "56523.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20200420",
+                    "dtati": "131314",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00107"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00108",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202011",
+            "fpper": "201911",
+            "fpbeg": "20191101",
+            "fpend": "20191130",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20191115",
+            "amountPaid": "56523.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "56523.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20200420",
+                    "dtati": "131810",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00108"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00109",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202011",
+            "fpper": "201912",
+            "fpbeg": "20191201",
+            "fpend": "20191231",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20191210",
+            "amountPaid": "75761.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "75761.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20200420",
+                    "dtati": "132826",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00109"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00110",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202011",
+            "fpper": "202001",
+            "fpbeg": "20200101",
+            "fpend": "20200131",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20200115",
+            "amountPaid": "69082.68 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "69082.68 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20200420",
+                    "dtati": "135153",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00110"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00111",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202011",
+            "fpper": "202002",
+            "fpbeg": "20200201",
+            "fpend": "20200229",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20200214",
+            "amountPaid": "58037.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "58037.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20200612",
+                    "dtati": "142920",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00111"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00112",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202011",
+            "fpper": "202003",
+            "fpbeg": "20200301",
+            "fpend": "20200331",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20200313",
+            "amountPaid": "58037.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "58037.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20200614",
+                    "dtati": "110500",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00112"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00113",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202011",
+            "fpper": "202004",
+            "fpbeg": "20200401",
+            "fpend": "20200430",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20200415",
+            "amountPaid": "58037.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "58037.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20200614",
+                    "dtati": "165831",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00113"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00168",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202103",
+            "fpper": "202005",
+            "fpbeg": "20200501",
+            "fpend": "20200531",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20200515",
+            "amountPaid": "58037.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "58037.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20200615",
+                    "dtati": "093411",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00168"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00249",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202202",
+            "fpper": "202006",
+            "fpbeg": "20200601",
+            "fpend": "20200630",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20200615",
+            "amountPaid": "111587.66 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "111587.66 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20200616",
+                    "dtati": "120143",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00249"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00250",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202202",
+            "fpper": "202007",
+            "fpbeg": "20200701",
+            "fpend": "20200731",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20200715",
+            "amountPaid": "72889.44 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "72889.44 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20200902",
+                    "dtati": "132732",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00250"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00251",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202202",
+            "fpper": "202008",
+            "fpbeg": "20200801",
+            "fpend": "20200831",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20200814",
+            "amountPaid": "77407.16 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "77407.16 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20201007",
+                    "dtati": "142442",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00251"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00252",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202202",
+            "fpper": "202009",
+            "fpbeg": "20200901",
+            "fpend": "20200930",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20200915",
+            "amountPaid": "92260.72 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "92260.72 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20210114",
+                    "dtati": "134921",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00252"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00253",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202202",
+            "fpper": "202010",
+            "fpbeg": "20201001",
+            "fpend": "20201031",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20201015",
+            "amountPaid": "59940.14 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "59940.14 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20210309",
+                    "dtati": "155544",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00253"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00254",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202202",
+            "fpper": "202011",
+            "fpbeg": "20201101",
+            "fpend": "20201130",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20201113",
+            "amountPaid": "54312.41 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "54312.41 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20210319",
+                    "dtati": "151031",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00254"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00255",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202202",
+            "fpper": "202012",
+            "fpbeg": "20201201",
+            "fpend": "20201231",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20201210",
+            "amountPaid": "78179.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "78179.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20210321",
+                    "dtati": "213919",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00255"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00256",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202202",
+            "fpper": "202101",
+            "fpbeg": "20210101",
+            "fpend": "20210131",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20210115",
+            "amountPaid": "56308.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "56308.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20210417",
+                    "dtati": "070713",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00256"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00257",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202202",
+            "fpper": "202102",
+            "fpbeg": "20210201",
+            "fpend": "20210228",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20210215",
+            "amountPaid": "57382.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "57382.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20210420",
+                    "dtati": "191405",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00257"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00258",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202202",
+            "fpper": "202103",
+            "fpbeg": "20210301",
+            "fpend": "20210331",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20210315",
+            "amountPaid": "57382.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "57382.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20210426",
+                    "dtati": "194506",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00258"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00259",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202202",
+            "fpper": "202104",
+            "fpbeg": "20210401",
+            "fpend": "20210430",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20210415",
+            "amountPaid": "57382.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "57382.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20210602",
+                    "dtati": "095752",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00259"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00260",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202202",
+            "fpper": "202105",
+            "fpbeg": "20210501",
+            "fpend": "20210531",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20210514",
+            "amountPaid": "57382.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "57382.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20210714",
+                    "dtati": "072400",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00260"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00261",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202202",
+            "fpper": "202106",
+            "fpbeg": "20210601",
+            "fpend": "20210630",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20210615",
+            "amountPaid": "127159.37 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "127159.37 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20210927",
+                    "dtati": "103937",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00261"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00262",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202202",
+            "fpper": "202107",
+            "fpbeg": "20210701",
+            "fpend": "20210731",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20210715",
+            "amountPaid": "57382.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "57382.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20210928",
+                    "dtati": "095640",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00262"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00263",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202202",
+            "fpper": "202108",
+            "fpbeg": "20210801",
+            "fpend": "20210831",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20210813",
+            "amountPaid": "50182.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "50182.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20210928",
+                    "dtati": "120313",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00263"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00264",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202202",
+            "fpper": "202109",
+            "fpbeg": "20210901",
+            "fpend": "20210930",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20210915",
+            "amountPaid": "59904.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "59904.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20220117",
+                    "dtati": "101024",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00264"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00265",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202202",
+            "fpper": "202110",
+            "fpbeg": "20211001",
+            "fpend": "20211031",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20211015",
+            "amountPaid": "58255.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "58255.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20220117",
+                    "dtati": "105616",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00265"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00266",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202202",
+            "fpper": "202111",
+            "fpbeg": "20211101",
+            "fpend": "20211130",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20211115",
+            "amountPaid": "58255.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "58255.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20220117",
+                    "dtati": "112513",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00266"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00267",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202202",
+            "fpper": "202112",
+            "fpbeg": "20211201",
+            "fpend": "20211231",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20211210",
+            "amountPaid": "70339.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "70339.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20220118",
+                    "dtati": "085859",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00267"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00268",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202202",
+            "fpper": "202201",
+            "fpbeg": "20220101",
+            "fpend": "20220131",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20220114",
+            "amountPaid": "50566.00 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "50566.00 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "00000000",
+                    "dtati": "000000",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00268"
+        },
+        {
+            "pernr": "20000002",
+            "seqnr": "00269",
+            "abkrs": "VA",
+            "abkrs_text": "Norway",
+            "inper": "202202",
+            "fpper": "202202",
+            "fpbeg": "20220201",
+            "fpend": "20220228",
+            "juper": "2000",
+            "juper_text": "ZipCorp ASA",
+            "paydt": "20220215",
+            "amountPaid": "93715.35 ",
+            "amountPaidCurrency": "NOK",
+            "btResults": [
+                {
+                    "lgart": "/559",
+                    "lgart_text": "Transferred to bank",
+                    "betrg": "93715.35 ",
+                    "banks": "NO",
+                    "bankl": "9999",
+                    "bankn": "99991111111",
+                    "dtadt": "20220316",
+                    "dtati": "130256",
+                    "waers": "NOK"
+                }
+            ],
+            "payslipUrl": "/employees/099-20000002/payslip?seqnr=00269"
+        }
+    ]
+}

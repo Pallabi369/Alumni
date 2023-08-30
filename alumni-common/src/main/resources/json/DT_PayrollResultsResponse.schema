@@ -1,0 +1,184 @@
+{
+  "title": "DT_PayrollResultsResponse.xsd",
+  "$schema": "http://json-schema.org/schema#",
+  "id": "http://zalaris.com/restAPI/v1/payrollResults",
+  "type": "object",
+  "properties": {
+    "payrollResults": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "pernr": {
+            "type": "string",
+            "description": "Personnel number"
+          },
+          "seqnr": {
+            "type": "string",
+            "description": "Payroll sequence number"
+          },
+          "abkrs": {
+            "type": "string",
+            "description": "Payroll area"
+          },
+          "abkrs_text": {
+            "type": "string",
+            "description": "Payroll area text"
+          },
+          "inper": {
+            "type": "string",
+            "description": "In-period for payroll"
+          },
+          "fpper": {
+            "type": "string",
+            "description": "For-Period for Payroll (YYYYMM)"
+          },
+          "fpbeg": {
+            "type": "string",
+            "description": "Start date of payroll period (FOR period)"
+          },
+          "fpend": {
+            "type": "string",
+            "description": "End of payroll period (for-period)"
+          },
+          "juper": {
+            "type": "string",
+            "description": "Legal Person/Company code"
+          },
+          "juper_text": {
+            "type": "string",
+            "description": "Legal Person/Company code text"
+          },
+          "paydt": {
+            "type": "string",
+            "description": "Pay date for payroll result"
+          },
+          "amountPaid": {
+            "type": "string",
+            "description": "Total amount paid"
+          },
+          "amountPaidCurrency": {
+            "type": "string",
+            "description": "Total amount currency"
+          },
+          "crtResults": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "description": "undefined\nCurrency Key",
+              "properties": {
+                "lgart": {
+                  "type": "string",
+                  "description": "Wage Type"
+                },
+                "lgart_text": {
+                  "type": "string",
+                  "description": "Wage Type Text"
+                },
+                "anzhl": {
+                  "type": "string",
+                  "description": "HR payroll: Number"
+                },
+                "betrg": {
+                  "type": "string",
+                  "description": "HR Payroll: Amount"
+                },
+                "amt_curr": {
+                  "type": "string",
+                  "description": "Currency Key"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "rtResults": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "description": "undefined\nCurrency Key",
+              "properties": {
+                "lgart": {
+                  "type": "string",
+                  "description": "Wage Type"
+                },
+                "lgart_text": {
+                  "type": "string",
+                  "description": "Wage Type Text"
+                },
+                "anzhl": {
+                  "type": "string",
+                  "description": "HR payroll: Number"
+                },
+                "betrg": {
+                  "type": "string",
+                  "description": "HR Payroll: Amount"
+                },
+                "amt_curr": {
+                  "type": "string",
+                  "description": "Currency Key"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "btResults": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "description": "undefined\nCurrency Key",
+              "properties": {
+                "lgart": {
+                  "type": "string",
+                  "description": "Wage Type"
+                },
+                "lgart_text": {
+                  "type": "string",
+                  "description": "Wage Type Text"
+                },
+                "betrg": {
+                  "type": "string",
+                  "description": "HR Payroll: Amount"
+                },
+                "banks": {
+                  "type": "string",
+                  "description": "Bank Country Key"
+                },
+                "bankl": {
+                  "type": "string",
+                  "description": "Bank Number"
+                },
+                "bankn": {
+                  "type": "string",
+                  "description": "Bank Account number"
+                },
+                "dtadt": {
+                  "type": "string",
+                  "description": "Transfer date"
+                },
+                "dtati": {
+                  "type": "string",
+                  "description": "Transfer time"
+                },
+                "waers": {
+                  "type": "string",
+                  "description": "Currency Key"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "payslipUrl": {
+            "type": "string",
+            "description": "Payslip URL path"
+          }
+        },
+        "additionalProperties": false,
+        "description": "undefined\nPayslip URL path"
+      }
+    }
+  },
+  "required": [
+    "payrollResults"
+  ],
+  "additionalProperties": false
+}

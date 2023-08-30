@@ -1,0 +1,8 @@
+### Random user
+GET http://localhost:3100/clone?user=099-12345678
+Accept: application/json
+
+### Cloned user
+GET http://localhost:3100/clone?user=510-00460014
+Accept: application/json
+

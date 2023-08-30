@@ -1,0 +1,205 @@
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+  
+stages:
+- stage: build
+  displayName: Build artifacts
+  jobs:
+  - job: gradle_build
+    displayName: Build gradle artifacts
+    steps:
+
+    - task: Gradle@2
+      displayName: 'Gradle build & test'
+      inputs:
+        workingDirectory: ''
+        gradleWrapperFile: 'gradlew'
+        gradleOptions: '-Xmx1024m -Dorg.gradle.project.vstsMavenAccessToken=$(vstsMavenAccessToken)'
+        javaHomeOption: 'JDKVersion'
+        jdkVersionOption: '1.17'
+        jdkArchitectureOption: 'x64'
+        publishJUnitResults: true
+        testResultsFiles: '**/TEST-*.xml'
+        tasks: 'build jacocoAggregatedReport'
+        
+    - script: for f in $(find ./build -type f -name "*.html"); do echo '<style>' >> $f && cat $(System.DefaultWorkingDirectory)/build/reports/jacoco/jacocoAggregatedReport/html/jacoco-resources/report.css >> $f && echo '</style>' >> $f;done
+
+    - task: PublishCodeCoverageResults@1
+      displayName: Publish code coverage
+      inputs:
+        summaryFileLocation: $(System.DefaultWorkingDirectory)/build/reports/jacoco/jacocoAggregatedReport/jacocoAggregatedReport.xml
+        reportDirectory: $(System.DefaultWorkingDirectory)/build/reports/jacoco/jacocoAggregatedReport/html/
+
+    - task: Gradle@2
+      displayName: 'Docker build'
+      inputs:
+        gradleWrapperFile: 'gradlew'
+        tasks: 'bootBuildImage'
+        publishJUnitResults: false
+        javaHomeOption: 'JDKVersion'
+        jdkVersionOption: '1.17'
+        gradleOptions: '-Xmx1024m -Dorg.gradle.project.vstsMavenAccessToken=$(vstsMavenAccessToken)'
+        sonarQubeRunAnalysis: false
+        spotBugsAnalysis: false
+    - task: Docker@2
+      displayName: 'Docker push mapper'
+      inputs:
+        containerRegistry: 'Zalaris'
+        repository: 'alumni/alumni-mapper-app'
+        command: 'push'
+        tags: |
+          $(Build.SourceVersion)
+          latest
+        addPipelineData: false
+        addBaseImageData: false
+    - task: Docker@2
+      displayName: 'Docker push sync'
+      inputs:
+        containerRegistry: 'Zalaris'
+        repository: 'alumni/alumni-sync-app'
+        command: 'push'
+        tags: |
+          $(Build.SourceVersion)
+          latest
+        addPipelineData: false
+        addBaseImageData: false
+
+  - job: npm_build_webapp
+    displayName: Build alumni-webapp
+    steps:
+      - task: Npm@1
+        displayName: 'Install alumni-webapp'
+        inputs:
+          command: 'ci'
+          workingDir: 'alumni-webapp'
+
+      - task: Docker@2
+        displayName: 'Build image of alumni-webapp'
+        inputs:
+          containerRegistry: 'Zalaris'
+          repository: 'alumni/alumni-webapp'
+          command: 'buildAndPush'
+          Dockerfile: 'alumni-webapp/Dockerfile'
+          buildContext: 'alumni-webapp'
+          tags: |
+            $(Build.SourceVersion)
+            latest
+          arguments: '--build-arg APP_VERSION=$(Build.SourceVersion)'
+          addPipelineData: false
+          addBaseImageData: false
+
+- stage: deploy_to_dev
+  displayName: Deploy to Dev K8S
+  dependsOn: build
+  jobs:
+  - deployment: dev_helm_install
+    displayName: Deploy to Dev env
+    pool:
+      vmImage: 'ubuntu-latest'
+    environment: 'alumni-dev'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - checkout: self 
+
+          - task: HelmDeploy@0
+            displayName: Deploy alumni-mapper-app to dev
+            inputs:
+              connectionType: 'Kubernetes Service Connection'
+              kubernetesServiceConnection: 'Zalaris k8s Alumni Default'
+              namespace: 'default'
+              command: 'upgrade'
+              chartType: 'FilePath'
+              chartPath: 'alumni-mapper-app/helm-chart'
+              releaseName: 'alumni-mapper-app'
+              overrideValues: 'imageTag=zalaris.azurecr.io/alumni/alumni-mapper-app:$(Build.SourceVersion)'
+              
+          - task: HelmDeploy@0
+            displayName: Deploy alumni-sync-app to dev
+            inputs:
+              connectionType: 'Kubernetes Service Connection'
+              kubernetesServiceConnection: 'Zalaris k8s Alumni Default'
+              namespace: 'default'
+              command: 'upgrade'
+              chartType: 'FilePath'
+              chartPath: 'alumni-sync-app/helm-chart'
+              releaseName: 'alumni-sync-app'
+              overrideValues: 'imageTag=zalaris.azurecr.io/alumni/alumni-sync-app:$(Build.SourceVersion)'
+              
+          - task: HelmDeploy@0
+            displayName: Deploy alumni-webapp to dev
+            inputs:
+              connectionType: 'Kubernetes Service Connection'
+              kubernetesServiceConnection: 'Zalaris k8s Alumni Default'
+              namespace: 'default'
+              command: 'upgrade'
+              chartType: 'FilePath'
+              chartPath: 'alumni-webapp/helm-chart'
+              releaseName: 'alumni-webapp'
+              overrideValues: 'imageTag=zalaris.azurecr.io/alumni/alumni-webapp:$(Build.SourceVersion)'
+
+- stage: run_tests
+  displayName: Run end to end tests
+  dependsOn: deploy_to_dev
+  jobs:
+    - job: run_e2e_tests
+      displayName: Run end to end tests
+      steps:
+        - script: echo 'Here we should run QA automation'
+
+
+- stage: deploy_to_stage
+  displayName: Deploy to Stage K8S
+  dependsOn: run_tests
+  jobs:
+    - deployment: stage_helm_install
+      displayName: Deploy to Stage env
+      pool:
+        vmImage: 'ubuntu-latest'
+      environment: 'alumni-stage'
+      strategy:
+        runOnce:
+          deploy:
+            steps:
+              - checkout: self
+
+              - task: HelmDeploy@0
+                displayName: Deploy alumni-mapper-app to stage
+                inputs:
+                  connectionType: 'Kubernetes Service Connection'
+                  kubernetesServiceConnection: 'AlumniK8S'
+                  namespace: 'alumni'
+                  command: 'upgrade'
+                  chartType: 'FilePath'
+                  chartPath: 'alumni-mapper-app/helm-chart'
+                  releaseName: 'alumni-mapper-app'
+                  overrideValues: 'imageTag=zalaris.azurecr.io/alumni/alumni-mapper-app:$(Build.SourceVersion)'
+
+              - task: HelmDeploy@0
+                displayName: Deploy alumni-sync-app to stage
+                inputs:
+                  connectionType: 'Kubernetes Service Connection'
+                  kubernetesServiceConnection: 'AlumniK8S'
+                  namespace: 'alumni'
+                  command: 'upgrade'
+                  chartType: 'FilePath'
+                  chartPath: 'alumni-sync-app/helm-chart'
+                  releaseName: 'alumni-sync-app'
+                  overrideValues: 'imageTag=zalaris.azurecr.io/alumni/alumni-sync-app:$(Build.SourceVersion)'
+
+              - task: HelmDeploy@0
+                displayName: Deploy alumni-webapp to stage
+                inputs:
+                  connectionType: 'Kubernetes Service Connection'
+                  kubernetesServiceConnection: 'AlumniK8S'
+                  namespace: 'alumni'
+                  command: 'upgrade'
+                  chartType: 'FilePath'
+                  chartPath: 'alumni-webapp/helm-chart'
+                  releaseName: 'alumni-webapp'
+                  overrideValues: 'imageTag=zalaris.azurecr.io/alumni/alumni-webapp:$(Build.SourceVersion)'

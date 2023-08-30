@@ -1,0 +1,33 @@
+rootProject.name = 'alumni'
+
+include 'alumni-common',
+        'alumni-mapper-core',
+        'alumni-mapper-app',
+        'alumni-sync-core',
+        'alumni-sync-app'
+
+enableFeaturePreview('VERSION_CATALOGS')
+
+dependencyResolutionManagement {
+  versionCatalogs {
+    libs {
+      alias('jaxb-api').to('javax.xml.bind:jaxb-api:2.4.0-b180830.0359')
+      alias('testcontainers').to('org.testcontainers:testcontainers:1.16.2')
+      alias('testcontainers-postgresql').to('org.testcontainers:postgresql:1.16.2')
+      alias('awaitility').to('org.awaitility:awaitility:4.1.1')
+      alias('openapi-ui').to('org.springdoc:springdoc-openapi-ui:1.6.4')
+      alias('mapstruct').to('org.mapstruct:mapstruct:1.4.2.Final')
+      alias('mapstruct.processor').to('org.mapstruct:mapstruct-processor:1.4.2.Final')
+      alias('microsoft-graph').to('com.microsoft.graph:microsoft-graph:5.15.0')
+      alias('azure-identity').to('com.azure:azure-identity:1.2.5')
+      alias('gson').to('com.google.code.gson:gson:2.9.0')
+      alias('mongodb-encrypt').to('com.bol:spring-data-mongodb-encrypt:2.8.0')
+      alias('plugin-core').to('org.springframework.plugin:spring-plugin-core:2.0.0.RELEASE')
+      alias('plugin-metadata').to('org.springframework.plugin:spring-plugin-metadata:2.0.0.RELEASE')
+      alias('logstash-logback-encoder').to('net.logstash.logback:logstash-logback-encoder:7.1')
+      alias('insights-agent').to('com.microsoft.azure:applicationinsights-agent:3.2.10')
+    }
+  }
+}
+
+

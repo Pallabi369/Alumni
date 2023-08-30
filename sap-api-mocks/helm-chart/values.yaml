@@ -1,0 +1,7 @@
+
+applicationName: apimocks
+imageTag: zalaris.azurecr.io/alumni/mocks-server:0.1.0
+
+ports:
+  http: 3100
+replicaCount: 1

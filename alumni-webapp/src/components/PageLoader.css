@@ -1,0 +1,69 @@
+#dark-blue {
+    stroke-dasharray: 80;
+    stroke-dashoffset: 80;
+    animation: line-anim 0.7s ease-in-out forwards, dark-blue-fill 0.3s ease forwards 0.65s;
+}
+#orange {
+    stroke-dasharray: 90;
+    stroke-dashoffset: 90;
+    animation: line-anim 0.7s ease-in-out forwards, orange-fill 0.3s ease forwards 0.7s;
+}
+#light-blue {
+    stroke-dasharray: 120;
+    stroke-dashoffset: 120;
+    animation: line-anim 0.7s ease-in-out forwards, light-blue-fill 0.3s ease forwards 0.75s;
+    fill: #fff;
+}
+
+.header {
+    opacity: 0;
+    animation: text-appear 0.5s ease-in-out forwards 1s;
+}
+.subtitle {
+    opacity: 0;
+    animation: text-appear 0.5s ease-in-out forwards 1.2s;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes dark-blue-fill {
+    from {
+        fill: #fff;
+    }
+    to {
+        fill: #01519C;
+        stroke: transparent;
+    }
+}
+@keyframes orange-fill {
+    from {
+        fill: #fff;
+    }
+    to {
+        fill: #E75A25;
+        stroke: transparent;
+    }
+}
+@keyframes light-blue-fill {
+    from {
+        fill: #fff;
+    }
+    to {
+        fill: #1DB1E7;
+        stroke: transparent;
+    }
+}
+
+@keyframes text-appear {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

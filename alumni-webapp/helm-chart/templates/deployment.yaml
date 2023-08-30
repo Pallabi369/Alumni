@@ -1,0 +1,93 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    service: {{ .Values.applicationName }}
+  name: {{ .Values.applicationName }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      service: {{ .Values.applicationName }}
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        service: {{ .Values.applicationName }}
+    spec:
+      containers:
+        - name: {{ .Values.applicationName }}
+          image: {{ .Values.imageTag }}
+          imagePullPolicy: Always
+          ports:
+            - containerPort: {{ .Values.ports.http }}
+          resources: {}
+          env:
+            - name: BASE_PATH
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-webapp
+                  key: base-path
+            - name: HELPDESK_PATH
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-webapp
+                  key: helpdesk-path
+            - name: MSAL_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-webapp
+                  key: msal-client-id
+            - name: MSAL_PRIVATE_AUTHORITY
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-webapp
+                  key: msal-private-authority
+            - name: MSAL_CORPORATE_AUTHORITY
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-webapp
+                  key: msal-corporate-authority
+            - name: MSAL_REDIRECT_URI
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-webapp
+                  key: msal-redirect-uri
+            - name: MSAL_KNOWN_AUTHORITIES
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-webapp
+                  key: msal-known-authorities
+            - name: SIGNICAT_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-webapp
+                  key: signicat-client-id
+            - name: SIGNICAT_AUTHORIZE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-webapp
+                  key: signicat-authorize-url
+            - name: SIGNICAT_REDIRECT_URI
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-webapp
+                  key: signicat-redirect-uri
+            - name: SIGNICAT_ACR_VALUES
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-webapp
+                  key: signicat-acr
+            - name: SIGNICAT_PROFILE
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-webapp
+                  key: signicat-profile
+            - name: INSIGHTS_CONNECTION_STRING
+              valueFrom:
+                secretKeyRef:
+                  name: alumni-webapp
+                  key: insights-connection-string
+      restartPolicy: Always
+      imagePullSecrets:
+        - name: regcred
